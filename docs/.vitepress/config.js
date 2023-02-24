@@ -3,6 +3,9 @@ export default {
   description: 'Flyo Developer-Ressourcen',
   lang: 'de-DE',
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/master/docs/:path'
+    },
     siteTitle: 'Developer',
     logo: {light: '/assets/logo.png', dark: '/assets/logodark.png'},
     outlineTitle: 'Abschnitte',
