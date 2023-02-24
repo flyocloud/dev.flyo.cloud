@@ -11,7 +11,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "mermaid": "^9.2.2",
+    "mermaid": "^9.4.0",
     "vitepress": "^1.0.0-alpha.47",
     "vitepress-plugin-mermaid": "^2.0.8",
     "vue": "^3.2.37"
