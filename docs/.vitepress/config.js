@@ -4,7 +4,7 @@ export default {
   lang: 'de-DE',
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/master/docs/:path'
+      pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/main/docs/:path'
     },
     siteTitle: 'Developer',
     logo: {light: '/assets/logo.png', dark: '/assets/logodark.png'},
@@ -70,8 +70,18 @@ export default {
           { text: 'SignageOS', link: '/integrations/signageos' },
           { text: 'Adobe Indesign', link: '/integrations/indesign' },
           { text: 'Mailjet', link: '/integrations/mailjet' },
-          { text: 'Shopify', link: '/integrations/shopify' },
-          { text: 'Nitro CMS', link: '/integrations/nitrocms' },
+          { text: 'Shopify', link: '/integrations/shopify' }
+        ]
+      },
+      {
+        collapsed: true,
+        text: 'Nitro Headless CMS',
+        items: [
+          { text: 'Intro', link: '/nitrocms/' },
+          { text: 'JavaScript SDK', link: '/nitrocms/sdkjs' },
+          { text: 'PHP SDK', link: '/nitrocms/sdkphp' },
+          { text: 'Vue', link: '/nitrocms/vue' },
+          { text: 'Nuxt', link: '/nitrocms/nuxt' },
         ]
       },
       {
