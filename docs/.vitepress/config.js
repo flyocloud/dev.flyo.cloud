@@ -78,10 +78,9 @@ export default {
         text: 'Nitro Headless CMS',
         items: [
           { text: 'Intro', link: '/nitrocms/' },
-          { text: 'JavaScript SDK', link: '/nitrocms/sdkjs' },
-          { text: 'PHP SDK', link: '/nitrocms/sdkphp' },
-          { text: 'Vue', link: '/nitrocms/vue' },
-          { text: 'Nuxt', link: '/nitrocms/nuxt' },
+          { text: 'JavaScript', link: '/nitrocms/javascript' },
+          { text: 'PHP', link: '/nitrocms/php' },
+          { text: 'Vue', link: '/nitrocms/vue' }
         ]
       },
       {
