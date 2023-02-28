@@ -11,7 +11,7 @@ Das Flyo Nitro CMS ist ein Headless Content Management System, welches Inhalte a
 Das Flyo Nitro CMS baut auf drei strategischen Pfeilern auf, die allesamt bei der Entwicklung von Webseiten eine zentrale Rolle spielen:
 
 - config: Die config lädt alles, was benötigt wird, um sich innerhalb des Layouts zu bewegen. Dazu gehören Navigation oder Globale Inhalte (z.b "Locations" aus einer Entität, die im Footer iteriert werden sollen).
-- pages: Seiten werden anhand des Slugs (Pfad) evaluiert und beinhalten alle Inhalte, die für das Befüllen der Seite benötigt werden. Dazu ghören alle Inhaltselemente (Blöcke), aber auch Meta-Iation wie og description. Dynamisch Inhalte aus Entitäten können auch in Inhaltselementen via [Mapping](/infos/mapping) verwendet werden.
-- entity: Entiäten können mittels unique identifier abgerufen werden (wenn diese in Nitro konfiguriert wurden) und liefern alle daten zu einem Entitäts detail zurück.
+- pages: Seiten werden anhand des Slugs (Pfad) evaluiert und beinhalten alle Inhalte, die für das Befüllen der Seite benötigt werden. Dazu ghören alle Inhaltselemente (Blöcke), aber auch Meta-Informationen wie "og-descriptions". Dynamisch Inhalte aus Entitäten können via [Mapping](/infos/mapping) auch in Inhaltselementen verwendet werden.
+- entity: Entiäten können mittels unique identifier abgerufen werden (wenn diese im Nitro CMS konfiguriert wurden) und geben alle Details (Felder) zu einem bestimmten Inhalt aus.
 
-Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/openapi) definiert und somit verfügbar für alle Programmiersprachen.
+Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/openapi) definiert und sind für alle Programmiersprachen verfügbar.
