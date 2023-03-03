@@ -31,7 +31,7 @@ Zur Verfügung stehende Integrationen:
 
 ## Rate Limiting
 
-Alle Anfragen an den Flyo Server unterstehen einem Rate Limiting. Das Rate Limiting erlaubt 20 Anfragen in einer Periode von 10 Sekunden. Wird diese Limite überschritten, antwortet der Server mit einem Status Code 429 `Too Many Requests` und der Anfrage-Host wird für eine gewisse Zeit blockiert und kann keine neuen Anfragen an den Server senden. Für SDK's ist ein limit von 40 Anfragen in einer Periode von 10 Sekunden definiert. Dies ermöglicht mittels SDK und der `per-page=100` einstellung innerhalb von 10 Sekunden eine maximale Anzahl von 4000 Datensätze abzurufen.
+Alle Anfragen an den Flyo Server unterstehen einem Rate Limiting. Das Rate Limiting erlaubt 20 Anfragen in einer Periode von 10 Sekunden. Wird diese Limite überschritten, antwortet der Server mit einem Status Code 429 `Too Many Requests` und der Anfrage-Host wird für eine gewisse Zeit blockiert und kann keine neuen Anfragen an den Server senden. Für SDK's und Nitro's ist ein limit von 50 Anfragen in einer Periode von 10 Sekunden definiert. Dies ermöglicht mittels SDK und der `per-page=100` einstellung innerhalb von 10 Sekunden eine maximale Anzahl von 5000 Datensätze abzurufen.
 
 ## Glossar
 
