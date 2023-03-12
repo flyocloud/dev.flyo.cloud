@@ -14,4 +14,4 @@ Das Flyo Nitro CMS baut auf drei strategischen Pfeilern auf, die allesamt bei de
 - `Pages` Seiten werden anhand des Slugs (Pfad) evaluiert und beinhalten alle Inhalte, die für das Befüllen der Seite benötigt werden. Dazu ghören alle Inhaltselemente (Blöcke), aber auch Meta-Informationen wie "og-descriptions". Dynamisch Inhalte aus Entitäten können via [Mapping](/infos/mapping) auch in Inhaltselementen verwendet werden.
 - `Entity` Entiäten können mittels unique identifier abgerufen werden (wenn diese im Nitro CMS konfiguriert wurden) und geben alle Details (Felder) zu einem bestimmten Inhalt aus.
 
-Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/openapi) definiert und sind für alle Programmiersprachen verfügbar.
+Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/openapi) definiert und sind für alle Programmiersprachen verfügbar. Für [PHP](php), [JavaScript](javascript) und [Vue](vue) gibt es fertige Packete.

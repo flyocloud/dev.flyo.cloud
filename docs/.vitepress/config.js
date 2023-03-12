@@ -79,7 +79,7 @@ export default {
       },
       {
         collapsed: true,
-        text: 'Nitro Headless CMS',
+        text: 'Nitro CMS',
         items: [
           { text: 'Intro', link: '/nitrocms/' },
           { text: 'JavaScript', link: '/nitrocms/javascript' },

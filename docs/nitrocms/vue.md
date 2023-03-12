@@ -1,4 +1,4 @@
-# Vue
+# Nitro CMS Vue
 
 Das vue 3 Plugin
 

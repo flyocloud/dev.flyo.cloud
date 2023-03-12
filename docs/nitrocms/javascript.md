@@ -1,5 +1,6 @@
 # Nitro CMS JavaScript SDK
 
-Das SDK für alli API Anfragen für JavaScript
+Das generische JavaScript SDK wurde aus der OpenAPI-Datei generiert und enthält die Möglichkeit, alle Endpunkte abzurufen. Es ist als Paket `npm` veröffentlicht und der Quellcode ist öffentlich auf GitHub verfügbar:
 
-https://github.com/flyocloud/nitrocms-js-sdk
++ [NPM](https://www.npmjs.com/package/@flyodev/nitrocms-js)
++ [GitHub](https://github.com/flyocloud/nitrocms-js-sdk)
