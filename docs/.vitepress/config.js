@@ -4,7 +4,8 @@ export default {
   lang: 'de-DE',
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/main/docs/:path'
+      pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/main/docs/:path',
+      text: 'Diese Seite auf GitHub bearbeiten'
     },
     siteTitle: 'Developer',
     logo: {light: '/assets/logo.png', dark: '/assets/logodark.png'},
@@ -16,6 +17,9 @@ export default {
     docFooter: {
       prev: 'Vorherige Seite',
       next: 'Nächste Seite'
+    },
+    footer: {
+      message: 'All rights reserved. Proudly developed in Switzerland by Heartbeat GmbH.'
     },
     nav: [
       { text: 'Dokumentation', link: '/home' },

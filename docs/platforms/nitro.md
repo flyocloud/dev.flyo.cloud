@@ -1,7 +1,7 @@
-# Flyo Nitro Frontend Integration
+# Nitro Frontend Integration
 
 :::danger Im Aufbau
-Diese Sektion ist zur Zeit noch im Aufbau. Stand Februar 2023
+Diese Sektion ist zur Zeit noch im Aufbau.
 :::
 
 + Bootstrap 5 Form Styles sind eingebunden https://getbootstrap.com/docs/5.0/forms/overview/

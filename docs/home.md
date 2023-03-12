@@ -23,6 +23,8 @@ Zur Verfügung stehende Integrationen:
 + [Adobe Indesign Integration](integrations/indesign.md)
 + [Mailjet Integration](integrations/mailjet.md)
 + [Shopify Integration](integrations/shopify.md)
++ [Nitro CMS Integration](nitrocms/)
++ [Nitro Frontend](platforms/nitro)
 
 ## Voraussetzung
 
