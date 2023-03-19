@@ -1,5 +1,9 @@
 # Bilder (Proxy)
 
+Das Speichersystem von Flyo bietet die Möglichkeit, Bilder ohne zusätzliche Software an den aktuellen Verwendungszweck anzupassen. Dazu gehört das Beschneiden von Bildern, das Zuschneiden nach Fokuspunkt oder das Formatieren von Dateien in ein anderes Dateiformat.
+
+## Zuschneiden Filter
+
 Unter `https://storage.flyo.cloud/{DATEI}` sind alle Bild-Dateien aufrufbar. Um eine kleinere Version eines Bildes aufzurufen, können untenstehende Adressen verwendet werden. Dabei gibt es 2 Arten von Adressen welche benutzt werden können um einen Filter zu erzeugen:
 
 | Aufbau        | Beispiel           
@@ -17,9 +21,9 @@ Ein Beispiel mit der Original Bild Datei `https://storage.flyo.cloud/integration
 
 | Grösse      | Beispiel           
 | ------------- |-------------
-| 250x250       |Gleiche Höhe und Breite definiert:<br /><br />![Flyo Metrics System](https://storage.flyo.cloud/filter/thumb/250x250/integrationsgruppe-flyowebseite_7a158241.jpg)
-| 250xnull       |Höhe dynamisch berechnet anhand der Breite mit dem originalen Seitenverhältnis:<br /><br />![Flyo Metrics System](https://storage.flyo.cloud/filter/thumb/250xnull/integrationsgruppe-flyowebseite_7a158241.jpg)
-| nullx250       |Breite dynamisch berechnet anhand der Höhe mit dem originalen Seitenverhältnis:<br /><br />![Flyo Metrics System](https://storage.flyo.cloud/filter/thumb/nullx250/integrationsgruppe-flyowebseite_7a158241.jpg)
+| 250x250       |Gleiche Höhe und Breite definiert:<br /><br />![Flyo Storage](https://storage.flyo.cloud/filter/thumb/250x250/integrationsgruppe-flyowebseite_7a158241.jpg)
+| 250xnull       |Höhe dynamisch berechnet anhand der Breite mit dem originalen Seitenverhältnis:<br /><br />![Flyo Storage](https://storage.flyo.cloud/filter/thumb/250xnull/integrationsgruppe-flyowebseite_7a158241.jpg)
+| nullx250       |Breite dynamisch berechnet anhand der Höhe mit dem originalen Seitenverhältnis:<br /><br />![Flyo Storage](https://storage.flyo.cloud/filter/thumb/nullx250/integrationsgruppe-flyowebseite_7a158241.jpg)
 
 ## Fokus
 
@@ -30,6 +34,16 @@ Der Fokus kommt nur bei Zuschneidungen **ohne dynamische** Seitenverhätlnisse z
 :::
 
 ![Filter Mapping](assets/focus.png)
+
+## Format konvertieren
+
+In gewissen Szenarien kann ein bestimmtes Dateiformat Vorteile bieten, z.B. JPG für eine bessere Bildqualität und PNG als Ersatz für GIF mit der Möglichkeit transparenter Hintergründe. Webp als Beispiel, erzeugt sehr effiziente Bilder und sollte für Webseiten verwendet werden. Um diesen Anforderungen gerecht zu werden, kann das Format bei der Erstellung eines Filters mit dem Parameter `format` query ausgewählt werden. Es ist also nur möglich, das Zielformat der Datei beim Beschneiden zu wählen, nicht für die Originaldatei. Ein Beispiel würde folgendermassen aussehen: `filter/thumb/250x250/image_7a158241.jpg?format=webp`. Die folgenden Formate werden unterstützt:
+
++ webp
++ jpg
++ jpeg
++ png
++ gif
 
 ## Filter und Mapping
 
