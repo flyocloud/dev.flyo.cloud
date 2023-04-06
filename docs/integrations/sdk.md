@@ -53,15 +53,17 @@ Es können mehrere Anweisungen hintereinander eingefügt werden welche danach al
 
 Folgende Operatoren können verwendet werden:
 
-+ `eq` enstpricht `=` also equal - `?filter[email][eq]=john@example.com`
-+ `neq` enstpricht  `!=` also not equal
-+ `gt` enstpricht `>` also greater then - `?filter[created_at][gt]=12345678`
-+ `gte` enstpricht `>=` also greater and equal then 
-+ `lt` enstpricht `<` also lower then - `?filter[age][lt]=18`
-+ `lte` enstpricht `<=` also lower and equal then
-+ `like` enstpricht dem MYSQL `LIKE '%xyz%'` also enthält
-+ `in` ist in einem Array enthalten (eine ODER Verbindung innerhalb des gewünschten Feldes)
-+ `nin` ist *nicht* in einem Array enthalten (ODER Verbindung)
+|Operator|SQL|Ausdruck|Beispiel|
+|--------|---|--------|--------|
+|`eq`|`=`|equal|`?filter[email][eq]=john@example.com`
+|`neq`|`!=`|not equal|`?filter[email][neq]=john@example.com`
+|`gt`|`>`|greater then|`?filter[created_at][gt]=12345678`
+|`gte`|`>=`|greater and equal then|`?filter[created_at][gte]=12345678`
+|`lt`|`<`|lower then|`?filter[age][lt]=18`
+|`lte`|`<=`|lower and equal then|`?filter[age][lte]=18`
+|`like`|`LIKE '%xyz%'`|enthält|`?filter[content][like]=Foobar`
+|`in`|`IN (X,Z)`|in einem Array enthalten (ODER Verbindung)|`?filter[id][in][]=X&filter[id][in][]=Y`
+|`nin`|`NOT IN (X,Z)`|*nicht* in einem Array enthalten (ODER Verbindung)|`?filter[id][nin][]=X&filter[id][nin][]=Y`
 
 Ein wichtiges Element sind `nested elements`, wenn man z.B ein Array hat mit Tags wie die folgende Response:
 
@@ -86,6 +88,42 @@ Ein wichtiges Element sind `nested elements`, wenn man z.B ein Array hat mit Tag
 
 So ist es möglich alle Einträge zu Filtern, welche ein bestimmtes nested element beinhalten. Um auf ein nested element zuzugreiffen, wird ein `.` verwendet, also `tags.alias`. Ein ganzes Beispiel für einen nested element Aufruf wäre `?filter[tags.alias]=essen`. Wenn mehrere nested Verbindungen angewendet werden, werden diese als ODER Verbindung eingefügt: `?filter[tags.alias][]=essen&filter[tags.alias][]=trinken` - alle Einträge mit dem Tag essen ODER trinken.
 
+#### AND/OR Verbindungen
+
+Innerhalb der Filterung können `AND` und `OR`-Verknüpfungen vorgenommen werden. Dies erhöht jedoch die Komplexität der Parameterspezifikation erheblich. Am einfachsten lässt sich dieser Filter daher in einer Array-Annotation darstellen, hier als Beispiel in JavaScript ein Filter, der alle Einträge mit Bahnhofstraße und einem dieser ausgewählten Tags ausgibt:
+
+```json
+{
+  "and": [
+    {
+      "content": {
+        "like": "Foobar"
+      }
+    },
+    {
+      "or": [
+        {
+          "tags.alias": "tag1"
+        },
+        {
+          "tags.alias": "tag2"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Die Annotation des `filter` Parameters würde wie folgt aussehen:
+
+```
+filter[and][0][content][like]=Foobar&filter[and][1][or][0][tags.alias]=tag1&filter[and][1][or][1][tags.alias]=tag2
+```
+
+Diese Ausgabe wurde [Automatisch erstellt via 3v4l.org erstellt](https://3v4l.org/vNgns) und kann helfen beim erstellen von filter Abfragen. 
+
+#### Beispiele
+
 Hier eine paar Beispiele zur Veranschaulichung und Kombination der Filter:
 
 ::: details ?filter[tags.id][]=X&filter[tags.id][]=Y
@@ -100,8 +138,41 @@ Einträge mit der ID X **oder** Y. In einem SQL-Format würde dies wie folgt aus
 Einträge, die kleiner sind als 1654466400 und Tags X **oder** Y haben. In einem SQL-Format würde dies wie folgt aussehen: `WHERE start_timestamp <= 1654466400 AND id IN (X,Y)`
 :::
 
+::: details ?filter[or][0][firstname]=Foo&filter[or][1][lastname]=Bar
+Eine einfach ORDER Verbindung anstelle von UND Verbindung als SQL `WHERE firstname = 'Foo' OR lastname = 'Bar'` veranschaulicht mittels PHP:
+```php
+['or' => [['firstname' => 'Foo'], ['lastname' => 'Bar']]];
+```
+:::
 
-In einem JavaScript SDK Kontext könnte der Filter-Paramter wie folgt verwendet werden `sdk.getXYZPool({filter: [{'tags.alias':'essen'}]})` oder in PHP `$apiInstance->getPointsOfInterestPool(1, 100, '-id',  ['tags.alias' => 'essen']);`
+::: details ?filter[and][0][content][like]=Foobar&filter[and][1][or][0][tags.alias]=tag1&filter[and][1][or][1][tags.alias]=tag2
+Ein Beispiel mit UND und ODER Verbindungen als SQL `WHERE (content LIKE `%Foobar%`) AND (tags.alias = 'tag1' OR tags.alias = 'tag')` veranschaulicht mittels PHP:
+```php
+[
+    'and' => [
+        [
+            'content' => ['like' => 'Foobar'],
+        ],
+        [
+            'or' => [
+                ['tags.alias' => 'tag1'],
+                ['tags.alias' => 'tag2'],
+            ],
+        ],
+    ],
+]
+```
+:::
+
+In einem JavaScript SDK Kontext könnte der Filter-Paramter wie folgt verwendet werden `sdk.getXYZPool({filter: [{'tags.alias':'essen'}]})` oder in PHP SDKs `$apiInstance->getPointsOfInterestPool(1, 100, '-id',  ['tags.alias' => 'essen'])`. In einer PHP Umgebung können die Filter wie folgt als query param übergeben werden `urldecode(http_build_query(['filter' => [/*...*/]))`.
+
+## Felder Limitieren
+
+Standardmässig werden alle Felder zurückgegeben, die in Flyo für den Content Pool ausgewählt wurden. Um nur bestimmte Felder aus dieser Auswahl zurückzugeben und damit den Datentransfer schlank zu halten, kann mit dem Abfrageparameter `fields` eine komma-separierte Liste von Feldern angegeben werden, die zurückgegeben werden sollen, z.B. `fields=id,firstname,lastname`.
+
+## Sortieren
+
+Um die Ausgabe zu sortieren, kann der Parameter `sort` verwendet werden, wobei `ASC` einem vorangestellten `+` oder keinem Vorzeichen und `DESC` einem `-` entspricht. Mehrere Sortierattribute können durch Komma getrennt angegeben werden, z.B. `sort=firstname,-birthday`, was auch `sort=+firstname,-birthday` entspricht.
 
 ## OpenAPI Client generieren
 
