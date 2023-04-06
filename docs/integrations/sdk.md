@@ -100,8 +100,15 @@ Einträge mit der ID X **oder** Y. In einem SQL-Format würde dies wie folgt aus
 Einträge, die kleiner sind als 1654466400 und Tags X **oder** Y haben. In einem SQL-Format würde dies wie folgt aussehen: `WHERE start_timestamp <= 1654466400 AND id IN (X,Y)`
 :::
 
-
 In einem JavaScript SDK Kontext könnte der Filter-Paramter wie folgt verwendet werden `sdk.getXYZPool({filter: [{'tags.alias':'essen'}]})` oder in PHP `$apiInstance->getPointsOfInterestPool(1, 100, '-id',  ['tags.alias' => 'essen']);`
+
+## Felder
+
+Standardmässig werden alle Felder zurückgegeben, die in Flyo für den Content Pool ausgewählt wurden. Um nur bestimmte Felder aus dieser Auswahl zurückzugeben und damit den Datentransfer schlank zu halten, kann mit dem Abfrageparameter `fields` eine komma-separierte Liste von Feldern angegeben werden, die zurückgegeben werden sollen, z.B. `fields=id,firstname,lastname`.
+
+## Sortieren
+
+Um die Ausgabe zu sortieren, kann der Parameter `sort` verwendet werden, wobei `ASC` einem vorangestellten `+``oder keinem Vorzeichen und `DESC` einem `-` entspricht. Mehrere Sortierattribute können durch Komma getrennt angegeben werden, z.B. `sort=firstname,-birthday`, was auch `sort=+firstname,-birthday` entspricht.
 
 ## OpenAPI Client generieren
 
