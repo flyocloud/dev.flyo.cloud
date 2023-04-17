@@ -3,6 +3,9 @@ export default {
   description: 'Flyo Developer-Ressourcen',
   lang: 'de-DE',
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     editLink: {
       pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/main/docs/:path',
       text: 'Diese Seite auf GitHub bearbeiten'
