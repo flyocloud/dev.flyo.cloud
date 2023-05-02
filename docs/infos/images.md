@@ -4,20 +4,21 @@ Das Speichersystem von Flyo bietet die Möglichkeit, Bilder ohne zusätzliche So
 
 ## Zuschneiden Filter
 
-Unter `https://storage.flyo.cloud/{DATEI}` sind alle Bild-Dateien aufrufbar. Um eine kleinere Version eines Bildes aufzurufen, können untenstehende Adressen verwendet werden. Dabei gibt es 2 Arten von Adressen welche benutzt werden können um einen Filter zu erzeugen:
+Unter `https://storage.flyo.cloud/{DATEINAME}` sind alle Bild-Dateien aufrufbar. Um eine kleinere Version eines Bildes aufzurufen, kann einen Filter mit der gewünschten Auflösung an die Adresse gehängt werden:
 
 | Aufbau        | Beispiel           
 | ------------- |-------------
-| `{DATEI}/thumb/{BREITE}x{HÖHE}`|`example.jpg/thumb/300x300`
-| `filter/thumb/{BREITE}x{HÖHE}/{DATEI}`|`filter/thumb/300x300/example.jpg`
+| `{DATEINAME}/thumb/{BREITE}x{HÖHE}`|`example.jpg/thumb/300x300`
 
-Anstelle von Datei den Dateinamen eingeben und anstelle von Breite und Höhe die gewünschte Grösse in Pixel. Um eine Seite dynamisch zu berechnen kann der Wert `null` verwendet werden. 
+Anstelle von DATEINAME den Dateinamen eingeben und anstelle von BREITE und HÖHE die gewünschte Grösse in Pixel. Um eine Seite dynamisch zu berechnen kann der Wert `null` verwendet werden. 
 
 Ein Beispiel mit der Original Bild Datei `https://storage.flyo.cloud/integrationsgruppe-flyowebseite_7a158241.jpg`:
 
 <figure>
   <img src="https://storage.flyo.cloud/integrationsgruppe-flyowebseite_7a158241.jpg">
 </figure>
+
+Eine Thumb-Filter Adresse für die oben genannte URL könnte wie folgt aussehen `https://storage.flyo.cloud/integrationsgruppe-flyowebseite_7a158241.jpg/thumb/250x250`.
 
 | Grösse      | Beispiel           
 | ------------- |-------------
