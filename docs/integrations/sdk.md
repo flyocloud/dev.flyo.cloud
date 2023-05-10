@@ -174,6 +174,17 @@ Standardmässig werden alle Felder zurückgegeben, die in Flyo für den Content 
 
 Um die Ausgabe zu sortieren, kann der Parameter `sort` verwendet werden, wobei `ASC` einem vorangestellten `+` oder keinem Vorzeichen und `DESC` einem `-` entspricht. Mehrere Sortierattribute können durch Komma getrennt angegeben werden, z.B. `sort=firstname,-birthday`, was auch `sort=+firstname,-birthday` entspricht.
 
+## Paginierung
+
+Die Rückgabedaten des SDK werden paginiert, d.h. jeweils nur eine gewisse Anzahl von Einträgen sind in einer einzelnen Anfrage enthalten. Alle Informationen zur Paginierung finden sich im Response-HEADER, unter folgenden Variabeln:
+
++ `X-Pagination-Total-Count` Anzahl der einträge/items
++ `X-Pagination-Page-Count` Anzahl Seiten
++ `X-Pagination-Current-Page` Die nummer der aktuellen Seite
++ `X-Pagination-Per-Page` Wieviel Einträge pro Seite zurück gegeben werden
+
+Mittels `per-page` (Standard ist 20 Einträge) kann man bis zu 100 Einträge pro Abrufe erhalten. Mit dem `page` Parameter (default 1) kann man zur nächsten Seiten mit Einträgen wechseln.
+
 ## OpenAPI Client generieren
 
 In unserem Beispiel verwenden wir den [OpenAPI Generator](https://openapi-generator.tech/). Dieser muss mittels `npm install @openapitools/openapi-generator-cli -g` global verfügbar sein. Es gibt aber auch andere Wege, um den Client zu generieren, siehe [Installations Anleitung](https://openapi-generator.tech/docs/installation)
