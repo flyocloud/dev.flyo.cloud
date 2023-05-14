@@ -1,15 +1,23 @@
 # Nitro CMS PHP SDK
 
-Das SDK für alli API Anfragen für PHP
+Ein SDK für alle PHP Applikationen:
 
 https://github.com/flyocloud/nitrocms-php-sdk
 
-## Yii2 Framework
+Im development modus kann die Applikation auf den `pageRefresh` event hören, danach wir die Seite neu geladen. Dies ist hilfreich wenn sie im Flyo Nitro anezeigt wird und Daten verändert werden:
 
-Module:
+```js
+const parentWindow = window.parent || window.opener;
+window.addEventListener("message", (event) => {
+    if (event.data?.action === 'pageRefresh') {
+        window.location.reload(true);
+    }
+})
+```
 
-https://github.com/flyocloud/nitrocms-yii2
+## PHP Frameworks
 
-Yii2 Example Project:
-
-https://github.com/flyocloud/yii2-zooexample.com
+|Name|Package|Example Project
+|----|-------|--------------
+|Yii2 Framework|https://github.com/flyocloud/nitrocms-yii2|https://github.com/flyocloud/yii2-zooexample.com
+|Laravel|https://github.com/flyocloud/nitrocms-laravel|https://github.com/flyocloud/laravel-zooexample.com
