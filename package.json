@@ -14,6 +14,6 @@
     "mermaid": "^9.4.3",
     "vitepress": "^1.0.0-alpha.75",
     "vitepress-plugin-mermaid": "^2.0.8",
-    "vue": "^3.2.37"
+    "vue": "^3.3.2"
   }
 }
