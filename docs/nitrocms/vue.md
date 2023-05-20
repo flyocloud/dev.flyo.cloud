@@ -1,15 +1,12 @@
 # Nitro CMS Vue
 
-Das vue 3 Plugin
+Das Vue3 Plugin basiert auf dem [JavaScript SDk](javascript) und ermöglicht eine schnelle Integration für Vue Projekte:
 
-https://github.com/flyocloud/nitrocms-vue3
++ [NitroCMS Vue3 auf NPM](https://www.npmjs.com/package/@flyodev/nitrocms-vue3)
++ [NitroCMS Vue3 auf GitHub](https://github.com/flyocloud/nitrocms-vue3)
 
-## Nuxt Framework
+## Vue Frameworks
 
-Ein Nuxt 3 Module bindet alle nötigen daten ein.
-
-https://github.com/flyocloud/nitrocms-nuxt
-
-Siehe scaffold Project
-
-https://github.com/flyocloud/nuxt-zooexample.com
+|Name|Package|Example Project
+|----|-------|--------------
+|Nuxt Framework|https://www.npmjs.com/package/@flyodev/nitrocms-nuxt|https://github.com/flyocloud/nuxt-zooexample.com

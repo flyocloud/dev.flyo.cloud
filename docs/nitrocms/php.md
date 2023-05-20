@@ -2,9 +2,10 @@
 
 Ein SDK für alle PHP Applikationen:
 
-https://github.com/flyocloud/nitrocms-php-sdk
++ [NitroCMS auf Packagist](https://packagist.org/packages/flyo/nitrocms-php)
++ [NitroCMS PHP SDK auf GitHub](https://github.com/flyocloud/nitrocms-php-sdk)
 
-Im development modus kann die Applikation auf den `pageRefresh` event hören, danach wir die Seite neu geladen. Dies ist hilfreich wenn sie im Flyo Nitro anezeigt wird und Daten verändert werden:
+Im Entwicklungsmodus kann die Anwendung auf das `pageRefresh` Ereignis warten, nach dem die Seite neu geladen wird. Dies ist nützlich, wenn die Seite im Flyo Nitro angezeigt wird und Daten geändert werden:
 
 ```js
 const parentWindow = window.parent || window.opener;
@@ -16,6 +17,8 @@ window.addEventListener("message", (event) => {
 ```
 
 ## PHP Frameworks
+
+Für die folgenden PHP-Frameworks stehen Adapter zur Verfügung. Die Adapter übernehmen die Auflösung der Slugs durch das Routing des Frameworks und ermöglichen eine schnelle Integration von Nitro CMS. 
 
 |Name|Package|Example Project
 |----|-------|--------------

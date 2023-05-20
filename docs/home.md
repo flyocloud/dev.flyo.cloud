@@ -38,7 +38,7 @@ Alle Anfragen an den Flyo Server unterstehen einem Rate Limiting. Das Rate Limit
 ## Glossar
 
 + `Entität/Entity`: Bezeichnet einen Inhaltstyp z.B `Blog`, `Veranstaltung`
-+ `Content Pool`: Gefäss, welches kuratiert oder automatisiert Inhalte organisiert. Content Pools sind die Basis für das Ausspielen von Inhalten über die Integrationen.
++ `Content Pool`: Behälter, der kuratierte oder regelbasierte Inhalte einer Entität organisiert. Content Pools bilden die Grundlage für die Verteilung von Inhalten über Integrationen. Ein kuratierter Content Pool kann über mehrere Entitäten hinweg organisiert sein.
 + `Integration`: Der Ort an dem die Daten von Content Pools ausgespielt werden, z.B via API für eine Webseite oder ein Embed Code welcher auf einer Webseite eingebunden wird.
-+ `Flyo Metric`: Anzahl Impressionen eines einzelnen Eintrags
++ `Flyo Metric`: Anzahl Impressionen eines einzelnen Eintrags messen und in Flyo visualieren.
 
