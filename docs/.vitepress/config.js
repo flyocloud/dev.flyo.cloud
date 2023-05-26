@@ -82,19 +82,19 @@ export default {
       },
       {
         collapsed: true,
-        text: 'Nitro CMS',
+        text: 'Nitro',
         items: [
-          { text: 'Intro', link: '/nitrocms/' },
-          { text: 'JavaScript', link: '/nitrocms/javascript' },
-          { text: 'PHP', link: '/nitrocms/php' },
-          { text: 'Vue', link: '/nitrocms/vue' }
+          { text: 'Intro', link: '/nitro/' },
+          { text: 'JavaScript', link: '/nitro/javascript' },
+          { text: 'PHP', link: '/nitro/php' },
+          { text: 'Vue', link: '/nitro/vue' }
         ]
       },
       {
         collapsed: true,
         text: 'Platformen',
         items: [
-          { text: 'Nitro Frontend', link: '/platforms/nitro' },
+          { text: 'Webseite Baukasten', link: '/platforms/nitro' },
           { text: 'Heartbeat Frontend', link: '/platforms/heartbeat' },
         ]
       }

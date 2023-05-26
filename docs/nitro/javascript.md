@@ -1,4 +1,4 @@
-# Nitro CMS JavaScript SDK
+# Nitro JavaScript SDK
 
 Das generische JavaScript SDK wurde aus der OpenAPI-Datei generiert und enthält die Möglichkeit, alle Endpunkte abzurufen. Es ist als Paket auf NPM veröffentlicht und der Quellcode ist öffentlich auf GitHub verfügbar:
 

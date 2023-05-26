@@ -1,4 +1,4 @@
-# Nitro CMS PHP SDK
+# Nitro PHP SDK
 
 Ein SDK für alle PHP Applikationen:
 
@@ -18,7 +18,7 @@ window.addEventListener("message", (event) => {
 
 ## PHP Frameworks
 
-Für die folgenden PHP-Frameworks stehen Adapter zur Verfügung. Die Adapter übernehmen die Auflösung der Slugs durch das Routing des Frameworks und ermöglichen eine schnelle Integration von Nitro CMS. 
+Für die folgenden PHP-Frameworks stehen Adapter zur Verfügung. Die Adapter übernehmen die Auflösung der Slugs durch das Routing des Frameworks und ermöglichen eine schnelle Integration von Nitro. 
 
 |Name|Package|Example Project
 |----|-------|--------------

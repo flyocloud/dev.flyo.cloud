@@ -1,4 +1,4 @@
-# Nitro CMS Vue
+# Nitro Vue
 
 Das Vue3 Plugin basiert auf dem [JavaScript SDk](javascript) und ermöglicht eine schnelle Integration für Vue Projekte:
 

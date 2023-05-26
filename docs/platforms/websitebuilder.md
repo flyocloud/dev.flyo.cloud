@@ -1,4 +1,4 @@
-# Nitro Frontend Integration
+# Webseite Baukasten Integration
 
 :::danger Im Aufbau
 Diese Sektion ist zur Zeit noch im Aufbau.

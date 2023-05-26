@@ -55,11 +55,11 @@ features:
     details: Verbinde Webflow, um mit Flyo verwaltete Produkte automatisiert mit Shopify-Onlineshops zu synchronisieren.
     link: integrations/shopify
   - icon: 🐼
-    title: Nitro CMS
+    title: Nitro
     details: Ein Headless Content Management System, welches Inhalte aus Entitäten und klassische, statische Inhaltselemente verbindet.
-    link: nitrocms/
-  - icon: 🚀
-    title: Nitro Frontend
+    link: nitro/
+  - icon: 🖥
+    title: Webseite Baukasten
     details: Ein auf Flyo zugeschnittener Baukasten, der es ermöglicht, mit wenigen Klicks eine Website zu erstellen.
-    link: platforms/nitro
+    link: platforms/websitebuilder
 ---
