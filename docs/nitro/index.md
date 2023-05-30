@@ -15,4 +15,4 @@ Das Flyo Nitro baut auf drei strategischen Pfeilern auf, die allesamt bei der En
 - `Entity` Entiäten können mittels unique identifier abgerufen werden (wenn diese im Nitro konfiguriert wurden) und geben alle Details (Felder) zu einem bestimmten Inhalt aus.
 - `Devlopment vs Production` Wenn Daten im Flyo User Interface geändert werden, ohne sie zu speichern, sind diese Änderungen für den Development Token verfügbar, der Production Token verwendet nur Daten, die durch Speichern gesichert wurden. Dies ermöglicht eine Live-Vorschau während der Dateneingabe.
 
-Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/openapi) definiert und sind für alle Programmiersprachen verfügbar.
+Alle Endpunkte werden durch eine [Open API Beschreibung](https://api.flyo.cloud/nitro/v1/openapi) definiert und sind für alle Programmiersprachen verfügbar.
