@@ -16,5 +16,3 @@ Flyo Nitro basiert auf vier strategischen Säulen, die alle eine wichtige Rolle 
 + `Pages`: Seiten werden anhand des Slugs (Pfads) evaluiert und enthalten alle Inhalte, die für das Befüllen der Seite benötigt werden. Dazu gehören alle Inhaltselemente (Blöcke), aber auch Meta-Informationen wie "og-descriptions". Dynamische Inhalte aus Entitäten können über [Mapping](/infos/mapping) auch in Inhaltselementen verwendet werden.
 + `Entity`: Entitäten können mittels eines eindeutigen Identifikators abgerufen werden (sofern sie in Nitro konfiguriert wurden) und liefern alle Details (Felder) zu einem bestimmten Inhalt.
 + `Entwicklung vs. Produktion`: Wenn Daten im Flyo User Interface geändert werden, ohne sie zu speichern, sind diese Änderungen für den Development Token verfügbar. Der Production Token verwendet nur Daten, die durch Speichern gesichert wurden. Dadurch ist eine Live-Vorschau während der Dateneingabe möglich.
-
-
