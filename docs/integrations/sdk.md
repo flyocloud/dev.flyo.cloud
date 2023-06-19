@@ -186,6 +186,9 @@ Standardmässig werden alle Felder zurückgegeben, die in Flyo für den Content 
 
 Um die Ausgabe zu sortieren, kann der Parameter `sort` verwendet werden, wobei `ASC` einem vorangestellten `+` oder keinem Vorzeichen und `DESC` einem `-` entspricht. Mehrere Sortierattribute können durch Komma getrennt angegeben werden, z.B. `sort=firstname,-birthday`, was auch `sort=+firstname,-birthday` entspricht.
 
++ `ASC` = Von kleinen zu grossen Zeichen/Zahlen 1,2,3 & A-Z
++ `DESC` = Von grossen zu kleinen Zeichen/Zahlen 3,2,1 & Z-A
+
 ## Paginierung
 
 Die Rückgabedaten des SDK werden paginiert, d.h. jeweils nur eine gewisse Anzahl von Einträgen sind in einer einzelnen Anfrage enthalten. Alle Informationen zur Paginierung finden sich im Response-HEADER, unter folgenden Variabeln:
