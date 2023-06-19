@@ -97,7 +97,7 @@ export default {
         collapsed: true,
         text: 'Platformen',
         items: [
-          { text: 'Webseite Baukasten', link: '/platforms/nitro' },
+          { text: 'Webseite Baukasten', link: '/platforms/websitebuilder' },
           { text: 'Heartbeat Frontend', link: '/platforms/heartbeat' },
         ]
       }
