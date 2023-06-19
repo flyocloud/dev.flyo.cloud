@@ -55,17 +55,19 @@ export default {
     ],
     sidebar: [
       {
-        collapsed: false,
-        text: 'Themen',
+        collapsed: true,
+        text: 'Allgemeines',
         items: [
+          { text: 'Home', link: '/home'},
           { text: 'Bilder', link: '/infos/images' },
           { text: 'Metriken', link: '/infos/metrics' },
           { text: 'Content Pools', link: '/infos/pools'},
-          { text: 'Inhalt Mapping', link: '/infos/mapping'}
+          { text: 'Inhalt Mapping', link: '/infos/mapping'},
+          { text: 'Rate Limit', link: '/infos/ratelimit'}
         ]
       },
       {
-        collapsed: false,
+        collapsed: true,
         text: 'Integrationen',
         items: [
           { text: 'Embed', link: '/integrations/embed' },
@@ -84,7 +86,8 @@ export default {
         collapsed: true,
         text: 'Nitro',
         items: [
-          { text: 'Intro', link: '/nitro/' },
+          { text: 'Grundlagen', link: '/nitro/' },
+          { text: 'Konzepte', link: '/nitro/concepts' },
           { text: 'JavaScript', link: '/nitro/javascript' },
           { text: 'PHP', link: '/nitro/php' },
           { text: 'Vue', link: '/nitro/vue' }

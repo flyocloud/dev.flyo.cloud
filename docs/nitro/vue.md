@@ -1,5 +1,9 @@
 # Nitro Vue
 
+:::danger Im Aufbau
+Dieser Abschnitt wird derzeit noch bearbeitet.
+:::
+
 Das Vue3 Plugin basiert auf dem [JavaScript SDk](javascript) und ermöglicht eine schnelle Integration für Vue Projekte:
 
 + [Flyo Nitro Vue3 auf NPM](https://www.npmjs.com/package/@flyo/nitro-vue3)

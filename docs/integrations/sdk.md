@@ -65,17 +65,23 @@ Folgende Operatoren können verwendet werden:
 |`in`|`IN (X,Z)`|in einem Array enthalten (ODER Verbindung)|`?filter[id][in][]=X&filter[id][in][]=Y`
 |`nin`|`NOT IN (X,Z)`|*nicht* in einem Array enthalten (ODER Verbindung)|`?filter[id][nin][]=X&filter[id][nin][]=Y`
 
-Ein wichtiges Element sind `nested elements`, wenn man z.B ein Array hat mit Tags wie die folgende Response:
+
+## Verschachtelte Objekte/Arrays
+
+Ein wichtiges Element bei der Abfrage von Daten ist der Zugriff auf verschachtelte Elemente, also auf verschachtelte Objekte oder Arrays. Eine Beispielantwort mit einem Array von Tags und einem Objekt namens "state" sieht wie folgt aus:
 
 ```json
 [
   {
     "id": 1,
     "title": "Flyo Cloud",
+    "state": {
+      "online": 1
+    },
     "tags": [
       {
         "id": 1,
-        "alias": "essen",
+        "alias": "essen"
       },
       {
         "id": 2,
@@ -86,7 +92,13 @@ Ein wichtiges Element sind `nested elements`, wenn man z.B ein Array hat mit Tag
 ]
 ```
 
-So ist es möglich alle Einträge zu Filtern, welche ein bestimmtes nested element beinhalten. Um auf ein nested element zuzugreiffen, wird ein `.` verwendet, also `tags.alias`. Ein ganzes Beispiel für einen nested element Aufruf wäre `?filter[tags.alias]=essen`. Wenn mehrere nested Verbindungen angewendet werden, werden diese als ODER Verbindung eingefügt: `?filter[tags.alias][]=essen&filter[tags.alias][]=trinken` - alle Einträge mit dem Tag essen ODER trinken.
+### Arrays
+
+Es ist möglich, alle Einträge zu filtern, die ein bestimmtes verschachteltes Element enthalten. Um auf ein verschachteltes Element zuzugreifen, wird ein Punkt (`.`) verwendet, z.B. `tags.alias`. Ein vollständiges Beispiel für den Aufruf eines verschachtelten Array-Elements wäre `?filter[tags.alias]=essen`. Wenn mehrere verschachtelte Verbindungen angewendet werden, werden diese als ODER-Verbindung eingesetzt, z.B. `?filter[tags.alias][]=essen&filter[tags.alias][]=trinken` - alle Einträge mit dem Tag "essen" ODER "trinken".
+
+### Objekte
+
+Um mit dem obigen Beispiel alle Einträge abzurufen, bei denen `state.online = 1`, wird ein Doppelpunkt (`:`) verwendet. Dadurch kann direkt auf das Element eines Objekts verwiesen werden. Ein Beispielaufruf, um alle Einträge mit dem Zustand 1 abzurufen, würde wie folgt aussehen: `?filter[state:online]=1`. Es sind auch alle Operatoren aus der Liste möglich, z.B. `?filter[state:online][gte]=1`.
 
 #### AND/OR Verbindungen
 
