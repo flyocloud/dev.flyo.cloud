@@ -66,7 +66,7 @@ Folgende Operatoren können verwendet werden:
 |`nin`|`NOT IN (X,Z)`|*nicht* in einem Array enthalten (ODER Verbindung)|`?filter[id][nin][]=X&filter[id][nin][]=Y`
 
 
-## Verschachtelte Objekte/Arrays
+### Verschachtelte Objekte/Arrays
 
 Ein wichtiges Element bei der Abfrage von Daten ist der Zugriff auf verschachtelte Elemente, also auf verschachtelte Objekte oder Arrays. Eine Beispielantwort mit einem Array von Tags und einem Objekt namens "state" sieht wie folgt aus:
 
@@ -92,15 +92,15 @@ Ein wichtiges Element bei der Abfrage von Daten ist der Zugriff auf verschachtel
 ]
 ```
 
-### Arrays
+#### Arrays
 
 Es ist möglich, alle Einträge zu filtern, die ein bestimmtes verschachteltes Element enthalten. Um auf ein verschachteltes Element zuzugreifen, wird ein Punkt (`.`) verwendet, z.B. `tags.alias`. Ein vollständiges Beispiel für den Aufruf eines verschachtelten Array-Elements wäre `?filter[tags.alias]=essen`. Wenn mehrere verschachtelte Verbindungen angewendet werden, werden diese als ODER-Verbindung eingesetzt, z.B. `?filter[tags.alias][]=essen&filter[tags.alias][]=trinken` - alle Einträge mit dem Tag "essen" ODER "trinken".
 
-### Objekte
+#### Objekte
 
 Um mit dem obigen Beispiel alle Einträge abzurufen, bei denen `state.online = 1`, wird ein Doppelpunkt (`:`) verwendet. Dadurch kann direkt auf das Element eines Objekts verwiesen werden. Ein Beispielaufruf, um alle Einträge mit dem Zustand 1 abzurufen, würde wie folgt aussehen: `?filter[state:online]=1`. Es sind auch alle Operatoren aus der Liste möglich, z.B. `?filter[state:online][gte]=1`.
 
-#### AND/OR Verbindungen
+### AND/OR Verbindungen
 
 Innerhalb der Filterung können `AND` und `OR`-Verknüpfungen vorgenommen werden. Dies erhöht jedoch die Komplexität der Parameterspezifikation erheblich. Am einfachsten lässt sich dieser Filter daher in einer Array-Annotation darstellen, hier als Beispiel in JavaScript ein Filter, der alle Einträge mit Bahnhofstraße und einem dieser ausgewählten Tags ausgibt:
 
@@ -134,7 +134,7 @@ filter[and][0][content][like]=Foobar&filter[and][1][or][0][tags.alias]=tag1&filt
 
 Diese Ausgabe wurde [Automatisch erstellt via 3v4l.org erstellt](https://3v4l.org/vNgns) und kann helfen beim erstellen von filter Abfragen. 
 
-#### Beispiele
+### Beispiele
 
 Hier eine paar Beispiele zur Veranschaulichung und Kombination der Filter:
 
