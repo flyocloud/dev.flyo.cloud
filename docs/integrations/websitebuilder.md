@@ -54,7 +54,7 @@ Container mit zentrierten Buttons
 ::: tip
 Wenn eine eigene Section defintion verwendet wird als HTML Code, muss die Container Breite leer sein, ansonsten fügt Nitro das section element autoamtisch ein und du hättest somit 2 sections. Container Breite muss also leer sein:
 
-![SX-Script Download](assets/nitro/nocontainer.png)
+![SX-Script Download](assets/builder/nocontainer.png)
 :::
 
 ```html

@@ -3,7 +3,6 @@
 Das Flyo Nitro ist ein Headless Content Management System, das die Inhalte von Entitäten (Inhaltstypen) und klassischen statischen Inhaltselementen (Blöcken) miteinander verbindet. Die Website wird mithilfe eines "Site-Trees" oder einer Navigation aufgebaut, wobei Inhalte entweder über [Mapping](/infos/mapping) oder durch Verwendung statischer Blöcke hinzugefügt werden können.
 
 :::info Erkunde diese Ressourcen, um ein besseres Verständnis der Nitro-Integration zu erhalten und deine Integrationsprojekte erfolgreich umzusetzen:
-+ [:point_right: Nitro-Integrationskonzepte: Hier findest du detaillierte Informationen zu den Konzepten und Prinzipien hinter der Nitro-Integration.](/nitro/concepts)
 + [:point_right: Online-API-Dokumentation: Die vollständige Dokumentation der Nitro-Integration-API. Diese Dokumentation bietet umfassende Informationen über die verfügbaren Endpunkte, Anfragemethoden, Parameter und Antwortformate.](https://nitro-openapi.flyo.cloud/)
 + [:point_right: Open-API-Datei: Diese Datei enthält die Spezifikationen und Definitionen der API-Endpunkte, die Ihnen bei der Entwicklung von Integrationen helfen können.](https://api.flyo.cloud/nitro/v1/openapi)
 :::
