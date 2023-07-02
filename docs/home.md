@@ -9,7 +9,7 @@ Folgenden Themen werden in den Developer-Ressourcen behandelt:
 + [Bilder](infos/images.md)
 + [Metriken](infos/metrics.md)
 + [Content Pools](infos/pools.md)
-+ [Felder Mapping](infos/mapping.md)
++ [Inhalt Mapping](infos/mapping.md)
 + [Rate Limit](infos/ratelimit.md)
 
 Zur Verfügung stehende Integrationen:
@@ -25,7 +25,7 @@ Zur Verfügung stehende Integrationen:
 + [Mailjet Integration](integrations/mailjet.md)
 + [Shopify Integration](integrations/shopify.md)
 + [Nitro Integration](nitro/)
-+ [Webseite Baukasten](platforms/websitebuilder)
++ [Webseite Baukasten](integrations/websitebuilder)
 
 ## Voraussetzung
 

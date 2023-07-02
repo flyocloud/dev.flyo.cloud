@@ -1,5 +1,6 @@
 # Heartbeat City Frontend
 
+
 Das Heartbeat City Frontend ist ein standardisierter Ausgabekanal für fixe Inhaltstypen (Entitäten). Dazu gehören Points-of-Interest, Veranstaltungen und Storys (Blogbeiträge).
 
 ## Weiterleitungen
