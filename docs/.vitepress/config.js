@@ -3,6 +3,7 @@ export default {
   description: 'Flyo Developer-Ressourcen',
   lang: 'de-DE',
   themeConfig: {
+    externalLinkIcon: true,
     search: {
       provider: 'local'
     },
