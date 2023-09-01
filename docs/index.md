@@ -61,5 +61,5 @@ features:
   - icon: 🖥
     title: Webseite Baukasten
     details: Ein auf Flyo zugeschnittener Baukasten, der es ermöglicht, mit wenigen Klicks eine Website zu erstellen.
-    link: platforms/websitebuilder
+    link: integrations/websitebuilder
 ---
