@@ -1,4 +1,4 @@
-# Entity Detail
+# Routing
 
 Beim Umgang mit Routings ist es wichtig zu wissen, wann eine Entität erforderlich ist und wann nicht. Eine Entität wird normalerweise benötigt, wenn auf eine bestimmte Ressource zugegriffen werden muss, z. B. ein Blog, ein Event, ein Team, ein POI usw. Die Webseite, die Nitro integriert, muss sich daher um die "Detailansicht" dieser Einträge kümmern. In Frameworks wird dies in der Regel als Routing bezeichnet, da eine "URL-Regel" erstellt werden muss. Zum Beispiel `blogs/<slug>` oder `veranstaltung/<uniqueid>`.
 
