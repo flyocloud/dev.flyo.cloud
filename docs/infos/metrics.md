@@ -1,6 +1,6 @@
 # Metriken
 
-![Flyo Metrics](assets/dashboard.png)
+![Flyo Metrics](assets/metric-4.png)
 
 Jede Integration bietet out-of-the-box eine Anbindung in die `Flyo Metrics` (Statistiken) in Form eines Tracking Pixels oder einer Schnittstellen-URL, welche aufgerufen werden kann. Die Metriken messen, wie oft Inhalte aufgerufen werden und geben dem Benutzer einen Anhaltspunkt über die Reichweite der publizierten Inhalte.
 
@@ -34,7 +34,7 @@ Beispiel mit JavaScript [fetch](https://developer.mozilla.org/en-US/docs/Web/API
 fetch('https://api.flyo.cloud/FLYO_CLOUD_METRIC_API_URL')
 ```
 
-Beispiel mit PHP:
+Beispiel mit PHP [curl](https://www.php.net/manual/en/book.curl.php):
 
 ```php
 <?php
@@ -56,3 +56,21 @@ Hier ein Beispiel Payload welcher auch in Kombination funktioniert:
     "3d8dd5075f5db664917-58-schema",
 ]
 ```
+
+## Dashboards
+
+Das Dashboard zeigt die Zugriffe der letzten 7 Tage an:
+
+![Flyo Metrics](assets/metric-1.png)
+
+Inhalte werden basierend auf ihrer Popularität sortiert und angezeigt. Dies bedeutet, dass die am meisten geschätzten und häufigsten angesehenen oder gelesenen Inhalte in der Liste ganz oben erscheinen, während weniger beliebte Inhalte weiter unten platziert werden:
+
+![Flyo Metrics](assets/metric-2.png)
+
+In Echtzeit können wir verfolgen, welche Inhalte gerade abgerufen werden. Dies ermöglicht uns, aktuelle Informationen über die Nutzung unserer Plattform zu erhalten und gegebenenfalls schnell auf Trends oder Bedürfnisse unserer Nutzerinnen und Nutzer zu reagieren:
+
+![Flyo Metrics](assets/metric-3.png)
+
+Über die einzelnen Integrationen werden die Zugriffe auf die Entität sichtbar gemacht:
+
+![Flyo Metrics](assets/metric-4.png)
