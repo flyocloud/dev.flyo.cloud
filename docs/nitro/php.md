@@ -19,6 +19,18 @@ window.addEventListener("message", (event) => {
 })
 ```
 
+Direktes öffnen des Inhaltselement durch klick in der Vorschau:
+
+```js
+const window = window.parent || window.opener;
+window.postMessage({
+  action: 'openEdit',
+  data: JSON.parse(JSON.stringify({
+    item: {uid: "the-block-uid-goes-here"}
+  }))
+}, 'https://flyo.cloud')
+```
+
 ## PHP Frameworks
 
 Für die folgenden PHP-Frameworks stehen Adapter zur Verfügung. Die Adapter übernehmen die Auflösung der Slugs durch das Routing des Frameworks und ermöglichen eine schnelle Integration von Nitro. 
