@@ -22,14 +22,24 @@ window.addEventListener("message", (event) => {
 Direktes öffnen des Inhaltselement durch klick in der Vorschau:
 
 ```js
-const window = window.parent || window.opener;
-window.postMessage({
-  action: 'openEdit',
-  data: JSON.parse(JSON.stringify({
-    item: {uid: "the-block-uid-goes-here"}
-  }))
-}, 'https://flyo.cloud')
+function getActualWindow() {
+    if (window === window.top) {
+        return window;
+    } else if (window.parent) {
+        return window.parent;
+    }
+    return window;
+}
+
+function openBlockInFlyo(blockUid) {
+    getActualWindow().postMessage({
+        action: 'openEdit',
+        data: JSON.parse(JSON.stringify({item:{uid: blockUid}}))
+    }, 'https://flyo.cloud')
+}
 ```
+
+Then use f.e an onclick event inside a html element `onclick="openBlockInFlyo(uniqueId)"`.
 
 ## PHP Frameworks
 
