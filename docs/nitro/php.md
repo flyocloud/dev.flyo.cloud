@@ -39,7 +39,7 @@ function openBlockInFlyo(blockUid) {
 }
 ```
 
-Then use f.e an onclick event inside a html element `onclick="openBlockInFlyo(uniqueId)"`.
+Danach muss beim Element die Funktion wie folgt aufgerufen werden: `onclick="openBlockInFlyo(uniqueId)"`.
 
 ## PHP Frameworks
 
