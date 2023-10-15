@@ -8,7 +8,7 @@ Wenn eine Eingabe in Flyo erfolgt, steht sie unmittelbar über den DEV-Token zur
 
 ## Aktualisierung mit DEV-Token
 
-![Nitro Routing](assets/preview.png)
+![Nitro Refresh](assets/preview.png)
 
 Wenn in Nitro die Vorschau über ein iFrame eingebunden wird, löst jede Änderung des DEV-Tokens das Ereignis "pageRefresh" aus. Dieses Ereignis kann abgefangen werden, um eine Seitenaktualisierung zu erzwingen und somit auch eine Live-Vorschau für serverbasierte Programmiersprachen einzubauen. Hier ist ein Beispiel in JavaScript:
 
@@ -21,6 +21,8 @@ window.addEventListener("message", (event) => {
 ```
 
 ## Öffnen in Flyo
+
+![Nitro Open from Block](assets/open-from-block.png)
 
 Wenn in der Flyo Vorschau auf ein Inhaltselement geklickt wird, kann dieses direkt geöffnet werden in der Bearbeiten Maske, dazu muss ein openEdit-Event ausgeführt werden:
 
