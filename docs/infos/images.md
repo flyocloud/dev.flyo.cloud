@@ -38,7 +38,7 @@ Der Fokus kommt nur bei Zuschneidungen **ohne dynamische** Seitenverhätlnisse z
 
 ## Format konvertieren
 
-In gewissen Szenarien kann ein bestimmtes Dateiformat Vorteile bieten, z.B. JPG für eine bessere Bildqualität und PNG als Ersatz für GIF mit der Möglichkeit transparenter Hintergründe. Webp als Beispiel, erzeugt sehr effiziente Bilder und sollte für Webseiten verwendet werden. Um diesen Anforderungen gerecht zu werden, kann das Format bei der Erstellung eines Filters mit dem Parameter `format` query ausgewählt werden. Es ist also nur möglich, das Zielformat der Datei beim Beschneiden zu wählen, nicht für die Originaldatei. Ein Beispiel würde folgendermassen aussehen: `image_7a158241.jpg/thumb/250x250?format=webp. Die folgenden Formate werden unterstützt:
+In gewissen Szenarien kann ein bestimmtes Dateiformat Vorteile bieten, z.B. JPG für eine bessere Bildqualität und PNG als Ersatz für GIF mit der Möglichkeit transparenter Hintergründe. Webp als Beispiel, erzeugt sehr effiziente Bilder und sollte für Webseiten verwendet werden. Um diesen Anforderungen gerecht zu werden, kann das Format bei der Erstellung eines Filters mit dem Parameter `format` query ausgewählt werden. Es ist also nur möglich, das Zielformat der Datei beim Beschneiden zu wählen, nicht für die Originaldatei. Ein Beispiel würde folgendermassen aussehen: `image_7a158241.jpg/thumb/250x250?format=webp`. Die folgenden Formate werden unterstützt:
 
 + webp
 + jpg
