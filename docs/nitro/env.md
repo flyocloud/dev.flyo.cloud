@@ -19,3 +19,27 @@ window.addEventListener("message", (event) => {
     }
 })
 ```
+
+## Öffnen in Flyo
+
+Wenn in der Flyo Vorschau auf ein Inhaltselement geklickt wird, kann dieses direkt geöffnet werden in der Bearbeiten Maske, dazu muss ein openEdit-Event ausgeführt werden:
+
+```js
+function getActualWindow() {
+    if (window === window.top) {
+        return window;
+    } else if (window.parent) {
+        return window.parent;
+    }
+    return window;
+}
+
+function openBlockInFlyo(blockUid) {
+    getActualWindow().postMessage({
+        action: 'openEdit',
+        data: JSON.parse(JSON.stringify({item:{uid: blockUid}}))
+    }, 'https://flyo.cloud')
+}
+```
+
+Danach muss beim Element die Funktion wie folgt aufgerufen werden: `onclick="openBlockInFlyo(uniqueId)"`.
