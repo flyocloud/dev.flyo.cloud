@@ -10,10 +10,10 @@ Jede Integration bietet out-of-the-box eine Anbindung in die `Flyo Metrics` (Sta
 
 ## Was gilt als Impression?
 
-+ Webflow, API, SDK: Misst eine Impression, sobald die Tracking-URL aufgerufen wird. Vergleichbar mit einem klassischen Seitenaufruf.
++ Webflow, API, SDK, Nitro: Misst eine Impression, sobald die Tracking-URL aufgerufen wird. Vergleichbar mit einem klassischen Seitenaufruf.
 + Embed Codes: Misst eine Impression, sobald ein Eintrag für mindestens 4 Sekunden zu 75% im sichtbaren Bildschirmbereich ist. Das Tracking geschieht automatisch und muss nicht aktiviert oder zusätzlich implementiert werden.
 + Signage OS: Misst eine Impression, sobald der generierte QR-Code auf einer Signage-Folie gescannt wurde. Vergleichbar mit einem Klick auf einer Webseite.
-+ Nitro Standard-Frontend: Misst eine Impression, wenn die Detailseite eines Inhalts aufgerufen wird. Das Tracking geschieht automatisch und muss nicht aktiviert oder zusätzlich implementiert werden.
++ Webseite Baukasten: Misst eine Impression, wenn die Detailseite eines Inhalts aufgerufen wird. Das Tracking geschieht automatisch und muss nicht aktiviert oder zusätzlich implementiert werden.
 + Map: Misst eine Impression, wenn ein Eintrag in der Map angeklickt und der weiterführende Link aufgerufen wird. Das Tracking geschieht automatisch und muss nicht aktiviert oder zusätzlich implementiert werden.
 
 ## Einbau via Tracking Pixel
