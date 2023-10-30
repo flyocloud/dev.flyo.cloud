@@ -65,6 +65,9 @@ Folgende Operatoren können verwendet werden:
 |`in`|`IN (X,Z)`|in einem Array enthalten (ODER Verbindung)|`?filter[id][in][]=X&filter[id][in][]=Y`
 |`nin`|`NOT IN (X,Z)`|*nicht* in einem Array enthalten (ODER Verbindung)|`?filter[id][nin][]=X&filter[id][nin][]=Y`
 
+::: info
+Wenn ein boolescher Wert verlangt wird, werden `true` und `false` über die Abfrageparameter als Zeichenkette interpretiert. Aus diesem Grund wird Flyo `true`, `True` oder auch `TRUE` als booleschen Wert `true` konvertieren und interpretieren.
+:::
 
 ### Verschachtelte Objekte/Arrays
 
