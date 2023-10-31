@@ -13,7 +13,7 @@ hero:
       text: Entwickler
       link: /dev/
     - theme: brand
-      text: How-To Anleitungen
+      text: How to
       link: /howto/
 
 features:
