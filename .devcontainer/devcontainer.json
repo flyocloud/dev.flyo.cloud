@@ -1,0 +1,3 @@
+{
+    "postStartCommand": "yarn install && yarn docs:dev"
+}
