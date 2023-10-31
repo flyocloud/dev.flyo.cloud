@@ -26,7 +26,8 @@ export default {
       message: 'All rights reserved. Proudly developed in Switzerland by Heartbeat GmbH.'
     },
     nav: [
-      { text: 'Dokumentation', link: '/home' },
+      { text: 'Entwickler', link: '/dev/' },
+      { text: 'How-To', link: '/howto/' },
       {
         text: 'Flyo',
         items: [
@@ -54,64 +55,72 @@ export default {
         ]
       },
     ],
-    sidebar: [
-      {
-        collapsed: true,
-        text: 'Allgemeines',
-        items: [
-          { text: 'Home', link: '/home'},
-          { text: 'Bilder', link: '/infos/images' },
-          { text: 'Metriken', link: '/infos/metrics' },
-          { text: 'Content Pools', link: '/infos/pools'},
-          { text: 'Inhalt Mapping', link: '/infos/mapping'},
-          { text: 'Rate Limit', link: '/infos/ratelimit'}
-        ]
-      },
-      {
-        collapsed: true,
-        text: 'Integrationen',
-        items: [
-          { text: 'Embed', link: '/integrations/embed' },
-          { text: 'Karte', link: '/integrations/map' },
-          { text: 'Hook', link: '/integrations/hooks' },
-          { text: 'API', link: '/integrations/api' },
-          { text: 'API SDK', link: '/integrations/sdk' },
-          { text: 'Webflow', link: '/integrations/webflow' },
-          { text: 'SignageOS', link: '/integrations/signageos' },
-          { text: 'Adobe Indesign', link: '/integrations/indesign' },
-          { text: 'Mailjet', link: '/integrations/mailjet' },
-          { text: 'Shopify', link: '/integrations/shopify' },
-          { text: 'Webseite Baukasten', link: '/integrations/websitebuilder' },
-        ]
-      },
-      {
-        collapsed: true,
-        text: 'Nitro',
-        items: [
-          { text: 'Grundlagen', link: '/nitro/' },
-          {
-            text: "Konzepte",
-            collapsed: true,
-            items: [
-              {text: 'Environments', link: '/nitro/env'},
-              {text: 'Blocks', link: '/nitro/block'},
-              {text: 'Routing', link: '/nitro/routing'},
-              {text: 'Seiten Eigenschaften', link: '/nitro/properties'},
-              {text: 'Suchen', link: '/nitro/search'},
-              {text: 'Sitemaps', link: '/nitro/sitemap'},
-            ]
-          },
-          {
-            text: "SDKs",
-            collapsed: true,
-            items: [
-              { text: 'PHP', link: '/nitro/php' },
-              { text: 'JavaScript', link: '/nitro/javascript' },
-              { text: 'Vue', link: '/nitro/vue' }
-            ]
-          },
-        ]
-      }
-    ]
+    sidebar: {
+      '/dev/': [
+        {
+          collapsed: true,
+          text: 'Allgemeines',
+          items: [
+            { text: 'Home', link: '/dev/index'},
+            { text: 'Bilder', link: '/dev/infos/images' },
+            { text: 'Metriken', link: '/dev/infos/metrics' },
+            { text: 'Content Pools', link: '/dev/infos/pools'},
+            { text: 'Inhalt Mapping', link: '/dev/infos/mapping'},
+            { text: 'Rate Limit', link: '/dev/infos/ratelimit'}
+          ]
+        },
+        {
+          collapsed: true,
+          text: 'Integrationen',
+          items: [
+            { text: 'Embed', link: '/dev/integrations/embed' },
+            { text: 'Karte', link: '/dev/integrations/map' },
+            { text: 'Hook', link: '/dev/integrations/hooks' },
+            { text: 'API', link: '/dev/integrations/api' },
+            { text: 'API SDK', link: '/dev/integrations/sdk' },
+            { text: 'Webflow', link: '/dev/integrations/webflow' },
+            { text: 'SignageOS', link: '/dev/integrations/signageos' },
+            { text: 'Adobe Indesign', link: '/dev/integrations/indesign' },
+            { text: 'Mailjet', link: '/dev/integrations/mailjet' },
+            { text: 'Shopify', link: '/dev/integrations/shopify' },
+            { text: 'Webseite Baukasten', link: '/dev/integrations/websitebuilder' },
+          ]
+        },
+        {
+          collapsed: true,
+          text: 'Nitro',
+          items: [
+            { text: 'Grundlagen', link: '/dev/nitro/' },
+            {
+              text: "Konzepte",
+              collapsed: true,
+              items: [
+                {text: 'Environments', link: '/dev/nitro/env'},
+                {text: 'Blocks', link: '/dev/nitro/block'},
+                {text: 'Routing', link: '/dev/nitro/routing'},
+                {text: 'Seiten Eigenschaften', link: '/dev/nitro/properties'},
+                {text: 'Suchen', link: '/dev/nitro/search'},
+                {text: 'Sitemaps', link: '/dev/nitro/sitemap'},
+              ]
+            },
+            {
+              text: "SDKs",
+              collapsed: true,
+              items: [
+                { text: 'PHP', link: '/dev/nitro/php' },
+                { text: 'JavaScript', link: '/dev/nitro/javascript' },
+                { text: 'Vue', link: '/dev/nitro/vue' }
+              ]
+            },
+          ]
+        }
+      ],
+      '/howto': [
+        { text: 'Artikel 1', link: '/howto/article1'},
+        { text: 'Artikel 1', link: '/howto/article1' },
+        { text: 'Artikel 1', link: '/howto/article1' },
+        { text: 'Artikel 1', link: '/howto/article1'},
+      ]
+    }
   }
 }
