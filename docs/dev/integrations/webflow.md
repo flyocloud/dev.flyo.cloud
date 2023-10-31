@@ -12,7 +12,7 @@ Webflow benötigt für die Synchronisation die `Archived` und `Draft` Felder. Di
 
 Wenn die Bilder aus Flyo nicht in die Webflow-Collection synchronisiert werden, liegt das an der Bildgrösse. Bilder in Webflow-Collections dürfen maximal 4 MB gross sein. Das Problem kann auf zwei Arten gelöst werden:
 1) Ersetze dein Bild in Flyo durch eine entsprechend stärker komprimierte Variante.
-2) Nutze unsere [Bilder Proxy](/infos/images.md) und setze direkt im Mapping-Prozess einen Filter, der dein Bild verkleinert.
+2) Nutze unsere [Bilder Proxy](../infos/images.md) und setze direkt im Mapping-Prozess einen Filter, der dein Bild verkleinert.
 
 ![Filter Mapping](../infos/assets/image-filter-mapping.png)
 
@@ -28,7 +28,7 @@ Flyo erlaubt es, dass du mehrere Datenbankfelder aus Flyo in ein und dasselbe Fe
 Ein Premium Webflow-Account ist Voraussetzug, damit die `Embed Elemente` verwendet werden können.
 :::
 
-Um Statistiken ans [Flyo Metrics System](/infos/metrics.md) zu übermitteln, muss Webflow wie folgt konfiguriert werden:
+Um Statistiken ans [Flyo Metrics System](../infos/metrics.md) zu übermitteln, muss Webflow wie folgt konfiguriert werden:
 
 1. Erstelle in der gewünschten CMS Collection bei Webflow ein neues Feld mit dem Namen `Tracking Pixel Flyo` und type Plain Text.
 2. Synchronisiere in Flyo das Feld Element `Metrik Tracking Pixel` in das neue Feld.

@@ -116,10 +116,7 @@ export default {
         }
       ],
       '/howto': [
-        { text: 'Artikel 1', link: '/howto/article1'},
-        { text: 'Artikel 1', link: '/howto/article1' },
-        { text: 'Artikel 1', link: '/howto/article1' },
-        { text: 'Artikel 1', link: '/howto/article1'},
+        { text: 'Abos & Preise', link: '/howto/pricing'},
       ]
     }
   }

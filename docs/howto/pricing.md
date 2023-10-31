@@ -1,0 +1,5 @@
+# Pricing
+
+::: info
+Im Aufbau
+:::
