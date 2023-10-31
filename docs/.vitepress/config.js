@@ -128,11 +128,11 @@ export default {
           collapsed: true,
           text: 'How to',
           items: [
-            { text: 'Entität erstellen', link: '/howto/xxx' },
-            { text: 'Team managen', link: '/howto/xxx' },
-            { text: '', link: '/howto/xxx' },
-            { text: '4', link: '/howto/xxx' },
-            { text: '5', link: '/howto/xxx' },
+            { text: 'Entität erstellen', link: '/howto/new-entity' },
+            { text: 'Team managen', link: '/howto/manage-team' },
+            { text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
+            { text: 'Online Status ändern', link: '/howto/onlinestatus },
+            { text: 'Cross Check anfordern', link: '/howto/crosscheck' },
           ]
         },
       ]
