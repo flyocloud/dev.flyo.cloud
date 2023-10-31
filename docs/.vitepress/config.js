@@ -1,6 +1,6 @@
 export default {
-  title: 'Flyo Developer-Ressourcen',
-  description: 'Flyo Developer-Ressourcen',
+  title: 'Flyo Helpcenter',
+  description: 'Flyo Helpcenter',
   lang: 'de-DE',
   themeConfig: {
     externalLinkIcon: true,
