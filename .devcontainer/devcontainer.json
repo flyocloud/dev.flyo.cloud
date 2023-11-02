@@ -1,3 +1,4 @@
 {
-    "postStartCommand": "yarn install && yarn docs:dev"
+    "postStartCommand": "yarn install",
+    "forwardPorts": [5173]
 }
