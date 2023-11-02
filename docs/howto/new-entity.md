@@ -46,3 +46,7 @@ Hier kannst du definieren, welche Benutzerrollen Inhalte für die neue Entität 
 ::: info Wo kann ich regeln, wer Inhalte bearbeiten oder löschen darf?
 Folgt.
 :::
+
+::: info Was passiert nach dem Speichern?
+Wenn du die neue Entität erstmalig speicherst, erstellt Flyo automatisch einen Content Pool für diese Inhalte. Dieser Content Pool kann nicht gelöscht werden und enthält stets alle Inhalte, die für diese Entität erstellt werden.
+:::
