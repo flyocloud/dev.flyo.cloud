@@ -133,6 +133,8 @@ export default {
             { text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
             { text: 'Online Status ändern', link: '/howto/onlinestatus' },
             { text: 'Cross Check anfordern', link: '/howto/crosscheck' },
+            { text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
+            { text: 'Berechtigungssystem', link: '/howto/manage-permissions' },
           ]
         },
       ]

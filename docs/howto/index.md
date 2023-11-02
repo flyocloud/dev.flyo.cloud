@@ -1,8 +1,14 @@
-# Flyo How-To
+# Wie können wir dir helfen?
 
-[[toc]]
+## Unterstützung anfordern
 
-:tada: :100:
+Um einen Fehler zu melden oder eine neue Funktion vorzuschlagen, benutze die in die Flyo-Oberfläche integrierte Supportfunkton oder sende uns direkt eine E-Mail an support@flyo.cloud.
+
+## Was ist neu?
+Changelog
+
+## Häufig gestellte Fragen
+FAQ
 
 ::: info
 This is an info box.
