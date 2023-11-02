@@ -1,6 +1,6 @@
 export default {
-  title: 'Flyo Developer-Ressourcen',
-  description: 'Flyo Developer-Ressourcen',
+  title: 'Flyo Helpcenter',
+  description: 'Flyo Helpcenter',
   lang: 'de-DE',
   themeConfig: {
     externalLinkIcon: true,
@@ -11,7 +11,7 @@ export default {
       pattern: 'https://github.com/flyocloud/dev.flyo.cloud/edit/main/docs/:path',
       text: 'Diese Seite auf GitHub bearbeiten'
     },
-    siteTitle: 'Developer',
+    siteTitle: 'Docs',
     logo: {light: '/assets/logo.png', dark: '/assets/logodark.png'},
     outlineTitle: 'Abschnitte',
     socialLinks: [
@@ -27,7 +27,7 @@ export default {
     },
     nav: [
       { text: 'Entwickler', link: '/dev/' },
-      { text: 'How-To', link: '/howto/' },
+      { text: 'How to', link: '/howto/' },
       {
         text: 'Flyo',
         items: [
@@ -116,7 +116,25 @@ export default {
         }
       ],
       '/howto': [
-        { text: 'Abos & Preise', link: '/howto/pricing'},
+        {
+          collapsed: true,
+          text: 'Preispläne & Abo',
+          items: [
+            { text: 'Übersicht', link: '/howto/pricing'},
+            { text: 'Abo verwalten', link: '/howto/manage-subscription'}
+          ]
+        },
+        {
+          collapsed: true,
+          text: 'How to',
+          items: [
+            { text: 'Entität erstellen', link: '/howto/new-entity' },
+            { text: 'Team managen', link: '/howto/manage-team' },
+            { text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
+            { text: 'Online Status ändern', link: '/howto/onlinestatus' },
+            { text: 'Cross Check anfordern', link: '/howto/crosscheck' },
+          ]
+        },
       ]
     }
   }
