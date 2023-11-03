@@ -26,8 +26,8 @@ export default {
       message: 'All rights reserved. Proudly developed in Switzerland by Heartbeat GmbH.'
     },
     nav: [
-      { text: 'Entwickler', link: '/dev/' },
-      { text: 'How to', link: '/howto/' },
+      { text: '⚡ Entwickler', link: '/dev/' },
+      { text: '🕮 How to', link: '/howto/' },
       {
         text: 'Flyo',
         items: [
@@ -58,7 +58,7 @@ export default {
     sidebar: {
       '/dev/': [
         {
-          collapsed: true,
+          collapsed: false,
           text: 'Allgemeines',
           items: [
             { text: 'Home', link: '/dev/index'},
@@ -70,7 +70,7 @@ export default {
           ]
         },
         {
-          collapsed: true,
+          collapsed: false,
           text: 'Integrationen',
           items: [
             { text: 'Embed', link: '/dev/integrations/embed' },
@@ -87,13 +87,12 @@ export default {
           ]
         },
         {
-          collapsed: true,
+          collapsed: false,
           text: 'Nitro',
           items: [
             { text: 'Grundlagen', link: '/dev/nitro/' },
             {
               text: "Konzepte",
-              collapsed: true,
               items: [
                 {text: 'Environments', link: '/dev/nitro/env'},
                 {text: 'Blocks', link: '/dev/nitro/block'},

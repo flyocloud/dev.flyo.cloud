@@ -1,14 +1,28 @@
+
+/**
+ * Colors: Function
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attched to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ *
+ * To understand the scaling system, refer to "Colors: Palette" section.
+ * -------------------------------------------------------------------------- */
+
 :root {
-    --vp-c-brand-1: #2cc1ff;
-    --vp-c-brand-2: #41c7ff;
-    --vp-c-brand-3: #1e87b2;
-    --vp-c-brand-soft:#37464C;
-  }
-  /*
-  https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
---vp-c-brand: var(--vp-c-green);
-  --vp-c-brand-light: var(--vp-c-green-light);
-  --vp-c-brand-lighter: var(--vp-c-green-lighter);
-  --vp-c-brand-dark: var(--vp-c-green-dark);
-  --vp-c-brand-darker: var(--vp-c-green-darker);
-  */
+  --vp-c-brand-1: #2cc1ff;
+  --vp-c-brand-2: #41c7ff;
+  --vp-c-brand-3: #239ACC;
+  --vp-c-brand-soft: #41c7ff;
+}
