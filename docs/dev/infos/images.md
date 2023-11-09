@@ -26,6 +26,10 @@ Eine Thumb-Filter Adresse für die oben genannte URL könnte wie folgt aussehen 
 | 250xnull       |Höhe dynamisch berechnet anhand der Breite mit dem originalen Seitenverhältnis:<br /><br />![Flyo Storage](https://storage.flyo.cloud/filter/thumb/250xnull/integrationsgruppe-flyowebseite_7a158241.jpg)
 | nullx250       |Breite dynamisch berechnet anhand der Höhe mit dem originalen Seitenverhältnis:<br /><br />![Flyo Storage](https://storage.flyo.cloud/filter/thumb/nullx250/integrationsgruppe-flyowebseite_7a158241.jpg)
 
+::: info
+Bilder in Flyo werden auf eine maximale Breite oder Höhe von 2560 Pixel zugeschnitten. Daher gilt dies auch als Limit für Breiten- und/oder Höhendefinitionen.
+:::
+
 ## Fokus
 
 Manchmal kommt es vor (gewollt oder ungewollt), dass das wichtigste Element in einem Bild nicht genau in der Mitte liegt. Aus diesem Grund kannst du in Flyo bei jedem Bild einen Fokuspunkt definieren. Sobald du bei einem Bild einen Fokuspunkt setzt, wird das Bild auf diesen Punkt zentriert. Du kannst den Fokuspunkt setzen oder verschieben, in dem du mit der Maus an die entsprechende Stelle im Bild klickst. Der Fokuspunkt wird angewendet, sobald das entsprechende Bild mit einem URL-Filter aus Flyo abgerufen wird. Achtung: eine bestimmte Bildstelle zu zentrieren, bedeutet immer, dass das Bild zugeschnitten werden muss - darum wirst nur dort einen Effekt sehen, wo das Bild zugeschnitten wird. Wenn der Fokuspunkt zu nahe am Rand liegt im Verhältnis zum gesamten Bildausschnitt, wird er nicht zentriert werden können. Dennoch hilft er dabei, den idealen Bereich auszuschneiden.
