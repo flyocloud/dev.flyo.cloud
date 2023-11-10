@@ -122,7 +122,7 @@ export default {
             { text: 'Übersicht', link: '/howto/pricing'},
             { text: 'Abo verwalten', link: '/howto/manage-subscription'},
             { text: 'Prepaid-Credits', link: '/howto/prepaid-credits'},
-            { text: 'Startguthaben', link: '/howto/starting-credits'}
+            { text: 'Startguthaben', link: '/howto/starting-credit'}
           ]
         },
         {
