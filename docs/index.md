@@ -10,10 +10,10 @@ hero:
     alt: Flyo
   actions:
     - theme: brand
-      text: ⚡ Entwickler
+      text:  ⚡️ Entwickler
       link: /dev/
     - theme: brand
-      text: 🕮 How to
+      text:  💪 How to
       link: /howto/
 
 features:
