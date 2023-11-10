@@ -120,7 +120,9 @@ export default {
           text: 'Preispläne & Abo',
           items: [
             { text: 'Übersicht', link: '/howto/pricing'},
-            { text: 'Abo verwalten', link: '/howto/manage-subscription'}
+            { text: 'Abo verwalten', link: '/howto/manage-subscription'},
+            { text: 'Prepaid-Credits', link: '/howto/prepaid-credits'},
+            { text: 'Startguthaben', link: '/howto/starting-credits'}
           ]
         },
         {
