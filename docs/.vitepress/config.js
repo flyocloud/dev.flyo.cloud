@@ -27,7 +27,7 @@ export default {
     },
     nav: [
       { text: '⚡ Entwickler', link: '/dev/' },
-      { text: '🕮 How to', link: '/howto/' },
+      { text: '📚 How to', link: '/howto/' },
       {
         text: 'Flyo',
         items: [
