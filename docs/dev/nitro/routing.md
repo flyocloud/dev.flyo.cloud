@@ -39,3 +39,7 @@ Um Links zu diesen Entitäten zu vereinfachen, wird automatisch in allen Abschni
     }
 ]
 ```
+
+::: info Reserviertes Wort `link`
+Wenn du in deinem Mapping den `link`-Bezeichner selbst verwendest, wird Flyo diese Variable nur dann befüllen, wenn sie leer ist. Daher ist es möglich, für bestimmte Inhalte einen eigenen Link zu definieren. `link` ist somit eine Art reserviertes Wort von Flyo, das jedoch überschrieben werden kann.
+:::
