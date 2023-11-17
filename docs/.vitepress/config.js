@@ -132,7 +132,7 @@ export default {
             { text: 'Entität erstellen', link: '/howto/new-entity' },
             { text: 'Team managen', link: '/howto/manage-team' },
             { text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
-            { text: 'Online Status ändern', link: '/howto/onlinestatus' },
+            { text: 'Onlinestatus ändern', link: '/howto/onlinestatus' },
             { text: 'Cross Check anfordern', link: '/howto/crosscheck' },
             { text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
             { text: 'Berechtigungssystem', link: '/howto/manage-permissions' },
