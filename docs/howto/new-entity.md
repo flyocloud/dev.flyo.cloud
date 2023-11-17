@@ -1,8 +1,6 @@
 # Entität erstellen
 
-::: info Was sind Entitäten?
-Dieses How to ist im Aufbau.
-:::
+![Überblick Entität](assets/entity-overview.svg)
 
 ## Neue Entität erstellen
 Eine neue Entität wird über den "Hinzufügen-Button" -> Entität erstellt.
