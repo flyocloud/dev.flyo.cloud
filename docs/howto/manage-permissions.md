@@ -1,11 +1,15 @@
 # Über Berechtigungen
 
-::: info
-Dieses How to ist im Aufbau.
-:::
+![Überblick Berechtiungen](assets/permissions-overview.svg)
 
 ## Allgemeines
-XXX
+Flyo bietet ein flexibles Berechtigungssystem, um vielfältige Content Workflows abbilden zu können.
+
+Das Berechtigungssystem orientiert sich dabei am Konzept der Datensparsamkeit. Das meint im Kontext von Flyo, dass Berechtigungen proaktiv vergeben werden müssen und nicht standardmässig für neue Benutzer:innen gelten.
+
+::: info Beispiel zur Datensparsamkeit
+Wird ein neuer Content Pool erstellt, müssen die berechtiguten Benutzer:innen definiert werden. Standardmässig sind ausser den Benutzer:innen mit der Benutzerrolle "Manager" keine Benutzer:innen berechtigt.
+:::
 
 ## Benutzerrollen
 XXX
@@ -23,6 +27,8 @@ XXX
 - Inhalt bearbeiten
 - Inhalt löschen
 - Onlinestatus ändern
+
+Was passiert, wenn Inhalt A in Pool B und C vorhanden ist, ein User aber nur auf C berechtigt ist?
 
 ## Integrationsgruppen
 XXX
