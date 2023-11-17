@@ -48,6 +48,8 @@ Für jeden Content Pool kann definiert werden, welche Benutzer:innen Inhalte ans
 
 Die Berechtigungen können entweder via Content Pools -> Content Pool X -> Bearbeiten -> Berechtigungen auf der Ebene eines Content Pools oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Content Pools vergeben und bearbeitet werden.
 
+Die Berechtigung zum Bearbeiten oder/und Löschen eines Content Pools wird über die Benutzerrole gesteuert.
+
 ::: info Was passiert, wenn Inhalt A in Content Pool 1 und 2 vorhanden ist, das Teammitglied aber nur auf Content Pool 2 berechtigt ist?
 Sobald ein Teammitglied über einen Content Pool eine entsprechende Berechtigung hat, gilt diese Berechtigung auf Ebene Inhalt. Das Teammitglied kann Inhalt A also bearbeiten (oder ggf. auch löschen, etc.), auch wenn keine Berechtigung für Content Pool 1 vorliegt.
 :::
@@ -65,11 +67,13 @@ Mit Berechtigungen für Integrationsgruppen wird gesteuert, welche Teammitgliede
 
 Die Berechtigungen können entweder via Integrationen -> Integrationsgruppe X -> Gruppe bearbeiten -> Bearbeiten -> Berechtigungen auf der Ebene einer Integrationsgruppe oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Integrationsgruppen vergeben und bearbeitet werden.
 
+Die Berechtigung zum Bearbeiten oder/und Löschen einer Integrationsgruppe wird über die Benutzerrole gesteuert.
+
 ::: info Tipp
 Unbeabsichtige Änderungen oder falsche Einstellungen können zu Fehlern in Integrationen und der Datenvearbeitung führen. Wir empfehlen, diese Berechtigungen zurückhaltend zu vergeben.
 :::
 
 ## Fokus Boards
-XXX
+Die Berechtigung für Fokus Board steuert, welches Teammitglied mit einem Fokus Board arbeiten kann. Die Berechtigung zum Bearbeiten oder Löschen von Fokus Boards wird über die Benutzerrolle (siehe oben) gesteuert.
 
-- Fokusboard ansehen
+Die Berechtigungen können entweder via Einstellungen -> Fokus Boards -> Bearbeiten (Stift-Icon) -> Berechtigungen auf der Ebene eines Fokus Board oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Fokus Boards vergeben und bearbeitet werden.
