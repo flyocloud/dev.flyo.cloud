@@ -36,18 +36,25 @@ Mit Benutzerrollen können Berechtigungen für das Hinzufügen von Inhalten sowi
 Die Berechtigungen für Erstellen, Bearbeiten, Löschen können seperat vergeben werden, z.B. nur erstellen oder nur bearbeiten und löschen, etc.
 :::
 
+## Content Pools
+Mit der Berechtigungslogik für Content Pools wird in erster Linie gesteuert, welche Teammitglieder mit welchen Inhalten in Flyo arbeiten dürfen.
+
+Für jeden Content Pool kann definiert werden, welche Benutzer:innen Inhalte ansehen, bearbeiten, löschen oder den Onlinestatus ändern dürfen.
+
+- Inhalte ansehen -> Das Teammitglied kann einen Inhalt anschauen, aber keine Änderungen vornehmen. Inhalte in diesem Content Pool sind über die Suche auffindbar und können kuratierten Content Pools hinzugefügt bzw. daraus entfernt werden.
+- Inhalte bearbeiten -> Das Teammitglied kann Inhalte in diesem Content Pool bearbeiten.
+- Onlinestatus ändern -> Das Teammitglied kann Inhalte in diesem Content Pool online bzw. offline schalten.
+- Inhalte löschen -> Das Teammitglied kann Inhalte aus diesem Content Pool (nicht aber den Content Pool selber) löschen.
+
+Die Berechtigungen können entweder via Content Pool -> Bearbeiten -> Berechtigungen auf der Ebene eines Content Pools oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Content Pools vergeben und bearbeitet werden.
+
+::: info Was passiert, wenn Inhalt A in Content Pool 1 und 2 vorhanden ist, das Teammitglied aber nur auf Content Pool 2 berechtigt ist?
+Sobald ein Teammitglied über einen Content Pool eine entsprechende Berechtigung hat, gilt diese Berechtigung auf Ebene Inhalt. Das Teammitglied kann Inhalt A also bearbeiten (oder ggf. auch löschen, etc.), auch wenn keine Berechtigung für Content Pool 1 vorliegt.
+:::
+
 ::: info Eigene Inhalte
 Inhalte, die mit dem eigenen Benutzeraccount erstellt wurden, können immer bearbeitet und gelöscht werden. Unabhängig davon, welche Berechtiugungen für Content Pools vorliegen.
 :::
-
-## Content Pools
-XXX
-
-- Inhalt bearbeiten
-- Inhalt löschen
-- Onlinestatus ändern
-
-Was passiert, wenn Inhalt A in Pool B und C vorhanden ist, ein User aber nur auf C berechtigt ist?
 
 ## Integrationsgruppen
 XXX
