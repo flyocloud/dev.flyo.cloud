@@ -33,7 +33,7 @@ window.addEventListener("message", (event) => {
 })
 ```
 
-::: Tip
+::: tip
 Diese Funktion sollte nur in der Entwicklungsumgebung verfügbar sein und aus der produktiven Domäne entfernt werden. Deine Applikation muss daher einen Mechanismus haben, um diese Funktion in der Produktionsumgebung zu entfernen.
 :::
 
@@ -63,6 +63,6 @@ function openBlockInFlyo(blockUid) {
 
 Danach muss beim Element die Funktion wie folgt aufgerufen werden: `onclick="openBlockInFlyo(uniqueId)"`.
 
-::: Tip
+::: tip
 Diese Funktion sollte nur in der Entwicklungsumgebung verfügbar sein und aus der produktiven Domäne entfernt werden. Deine Applikation muss daher einen Mechanismus haben, um diese Funktion in der Produktionsumgebung zu entfernen.
 :::
