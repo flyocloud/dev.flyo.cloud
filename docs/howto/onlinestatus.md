@@ -12,6 +12,10 @@ Du kannst den Onlinastatus über das Dashoard des entsprechenden Inhalts ändern
 
 Flyo zeigt dir mit einem roten (offline) bzw. grünen (online) Punkt an verschiedenen Stellen in der Oberfläche den Onlinestatus eines Inhalts an.
 
+::: info
+Um den Onlinestatus von Inhalten zu verändern, musst du über die entsprechenden Berechtigungen verfügen.
+:::
+
 ## Onlinestatus von Integrationen
 
 Wenn du eine Integration temporär nicht benötigst, kannst du diese offline schalten.
