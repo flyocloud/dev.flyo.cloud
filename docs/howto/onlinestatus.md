@@ -8,7 +8,7 @@ Wenn ein Inhalt online geschaltet ist, wird dieser Inhalt über Integrationen zu
 
 Wenn ein Inhalt offline geschaltet wird, wird der Inhalt auf allen Integrationen deaktiviert.
 
-Du kannst den Onlinastatus über das Dashoard des entsprechenden Inhalts ändern.
+Du kannst den Onlinestatus über das Dashboard des entsprechenden Inhalts ändern.
 
 Flyo zeigt dir mit einem roten (offline) bzw. grünen (online) Punkt an verschiedenen Stellen in der Oberfläche den Onlinestatus eines Inhalts an.
 
