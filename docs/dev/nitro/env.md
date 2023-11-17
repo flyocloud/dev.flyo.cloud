@@ -2,6 +2,17 @@
 
 Die Unterscheidung zwischen DEV- und PROD-Token ermöglicht eine bessere Unterscheidung von Entwicklungs- und Produktionsinhalten. DEV-Token werden in der Entwicklungsphase verwendet, um den Zugriff auf temporäre Inhalte zu ermöglichen. PROD-Token hingegen werden in der Produktionsumgebung eingesetzt, um den Zugriff nur auf gespeicherte Inhalte zu gewähren.
 
+Generell ist zu beachten, dass bei der Entwicklung einer Nitro Headless Seite eine Umgebung sowohl für den produktiven als auch für den Entwicklungs-Token benötigt wird. Der Produktiv-Token verfügt über ein starkes Caching und sollte ausschließlich für die Produktiv-Webseiten-Domain verwendet werden. Der Entwicklungs-Token hat kein Caching und daher eine längere Antwortzeit.
+
+Ein Beispiel wäre:
+
+- **ci.flyozoo.com** Verwendet den Entwicklungs-Token und wird als Vorproduktionsumgebung in Flyo verwendet.
+- **flyozoo.com** Verwendet den Produktiv-Token und dient ausschließlich der Auslieferung der produktiven Webseite.
+
+::: tip
+Die Tokens werden normalerweise in sogenannten Umgebungsvariablen `ENVIRONMENT` der Anwendung bereitgestellt.
+:::
+
 ## DEV-Token
 
 Wenn eine Eingabe in Flyo erfolgt, steht sie unmittelbar über den DEV-Token zur Verfügung. Das bedeutet, dass man nicht auf "Speichern" klicken muss, um Inhalte direkt über dieses Token von der API abzurufen. Wenn der "Speichern"-Button geklickt wird, werden alle Änderungen des DEV-Token überschrieben. Hintergrundprozesse werden nicht in die DEV-Token-Umgebung übertragen, es sei denn, es wurden Änderungen in der Benutzeroberfläche vorgenommen. Beispielsweise wird ein neuer Eintrag zu einem Content Pool in der DEV-Umgebung nicht direkt sichtbar, es sei denn, man nimmt Änderungen in der Zuordnung dieses Blocks vor oder erneuert alle Änderungen durch Klicken auf den "Speichern"-Button.
@@ -19,6 +30,10 @@ window.addEventListener("message", (event) => {
     }
 })
 ```
+
+::: Tip
+Diese Funktion sollte nur in der Entwicklungsumgebung verfügbar sein und aus der produktiven Domäne entfernt werden. Deine Applikation muss daher einen Mechanismus haben, um diese Funktion in der Produktionsumgebung zu entfernen.
+:::
 
 ## Öffnen in Flyo
 
@@ -45,3 +60,7 @@ function openBlockInFlyo(blockUid) {
 ```
 
 Danach muss beim Element die Funktion wie folgt aufgerufen werden: `onclick="openBlockInFlyo(uniqueId)"`.
+
+::: Tip
+Diese Funktion sollte nur in der Entwicklungsumgebung verfügbar sein und aus der produktiven Domäne entfernt werden. Deine Applikation muss daher einen Mechanismus haben, um diese Funktion in der Produktionsumgebung zu entfernen.
+:::
