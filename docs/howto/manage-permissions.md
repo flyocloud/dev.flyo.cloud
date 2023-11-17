@@ -46,7 +46,7 @@ Für jeden Content Pool kann definiert werden, welche Benutzer:innen Inhalte ans
 - Onlinestatus ändern -> Das Teammitglied kann Inhalte in diesem Content Pool online bzw. offline schalten.
 - Inhalte löschen -> Das Teammitglied kann Inhalte aus diesem Content Pool (nicht aber den Content Pool selber) löschen.
 
-Die Berechtigungen können entweder via Content Pool -> Bearbeiten -> Berechtigungen auf der Ebene eines Content Pools oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Content Pools vergeben und bearbeitet werden.
+Die Berechtigungen können entweder via Content Pools -> Content Pool X -> Bearbeiten -> Berechtigungen auf der Ebene eines Content Pools oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Content Pools vergeben und bearbeitet werden.
 
 ::: info Was passiert, wenn Inhalt A in Content Pool 1 und 2 vorhanden ist, das Teammitglied aber nur auf Content Pool 2 berechtigt ist?
 Sobald ein Teammitglied über einen Content Pool eine entsprechende Berechtigung hat, gilt diese Berechtigung auf Ebene Inhalt. Das Teammitglied kann Inhalt A also bearbeiten (oder ggf. auch löschen, etc.), auch wenn keine Berechtigung für Content Pool 1 vorliegt.
@@ -57,7 +57,19 @@ Inhalte, die mit dem eigenen Benutzeraccount erstellt wurden, können immer bear
 :::
 
 ## Integrationsgruppen
-XXX
+Mit Berechtigungen für Integrationsgruppen wird gesteuert, welche Teammitgliedern Zugriff auf die Integrationen einer Integrationsgruppe haben. Die Berechtigung für eine Integrationsgruppe gilt immer für alle Integrationen in dieser Gruppe.
+
+- Integrationen ansehen -> Teammitglied kann Integrationen ansehen aber keine Änderungen vornhemen.
+- Integrationen bearbeiten -> Teammitglied kann alle Integrationen inkl. allen Einstellungen einzelner Integrationen bearbeiten.
+- Integrationen löschen -> Teammitglied kann Integrationen unwiderruflich löschen.
+
+Die Berechtigungen können entweder via Integrationen -> Integrationsgruppe X -> Gruppe bearbeiten -> Bearbeiten -> Berechtigungen auf der Ebene einer Integrationsgruppe oder über Einstellungen -> Team -> Teammitglied bearbeiten -> Integrationsgruppen vergeben und bearbeitet werden.
+
+::: info Tipp
+Unbeabsichtige Änderungen oder falsche Einstellungen können zu Fehlern in Integrationen und der Datenvearbeitung führen. Wir empfehlen, diese Berechtigungen zurückhaltend zu vergeben.
+:::
 
 ## Fokus Boards
 XXX
+
+- Fokusboard ansehen
