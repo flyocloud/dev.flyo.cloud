@@ -1,7 +1,7 @@
 <template>
   <div
-    v-for="(item,index) in data"
-    :key="index"
+    v-for="item in data"
+    :key="item.name"
   >
     <h2>{{ item.name }}</h2>
     <p>{{ formatDate(item.released_at) }}</p>
