@@ -4,6 +4,7 @@
     :key="`${item.name}${index}`"
   >
     <h2>{{ item.name }}</h2>
+    
     <p>{{ formatDate(item.released_at) }}</p>
     <div v-html="item.description_html" />
   </div>
