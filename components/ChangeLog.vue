@@ -19,6 +19,7 @@ function padTo2Digits(num) {
 
 function formatDate(input) {
   const date = new Date(input)
+  
   return [
     padTo2Digits(date.getDate()),
     padTo2Digits(date.getMonth() + 1),
