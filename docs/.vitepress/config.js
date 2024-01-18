@@ -66,7 +66,8 @@ export default {
             { text: 'Metriken', link: '/dev/infos/metrics' },
             { text: 'Content Pools', link: '/dev/infos/pools'},
             { text: 'Inhalt Mapping', link: '/dev/infos/mapping'},
-            { text: 'Rate Limit', link: '/dev/infos/ratelimit'}
+            { text: 'Rate Limit', link: '/dev/infos/ratelimit'},
+            { text: 'Wysiwyg Editor', link: '/dev/infos/wysiwyg'},
           ]
         },
         {
