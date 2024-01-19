@@ -210,3 +210,13 @@ Bei der Arbeit mit den Eigenschaftstypen `Bilder` oder `Dateien` ist die Verwend
   {/foreach}
 </div>
 ```
+
+Hier wird überprüft, ob die Variable $image vorhanden ist. Wenn ja, wird das Bild ausgegeben; andernfalls wird eine Nachricht angezeigt, dass das Bild nicht existiert.
+
+```
+{% if $image %}
+  <img src="{$image}" />
+{% else %}
+  Das Bild existiert nicht.
+{% endif %}
+```
