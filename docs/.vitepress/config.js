@@ -120,10 +120,11 @@ export default {
           collapsed: true,
           text: 'Preispläne & Abo',
           items: [
-            { text: 'Übersicht', link: '/howto/pricing'},
-            { text: 'Abo verwalten', link: '/howto/manage-subscription'},
+
+            //{ text: 'Übersicht', link: '/howto/pricing'},
+            //{ text: 'Abo verwalten', link: '/howto/manage-subscription'},
             { text: 'Prepaid-Credits', link: '/howto/prepaid-credits'},
-            { text: 'Startguthaben', link: '/howto/starting-credit'}
+            //{ text: 'Startguthaben', link: '/howto/starting-credit'}
           ]
         },
         {
@@ -131,14 +132,14 @@ export default {
           text: 'How to',
           items: [
             { text: 'Entität erstellen', link: '/howto/new-entity' },
-            { text: 'Team managen', link: '/howto/manage-team' },
-            { text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
+            //{ text: 'Team managen', link: '/howto/manage-team' },
+            //{ text: 'Inhalte verknüpfen', link: '/howto/link-content-items' },
             { text: 'Onlinestatus ändern', link: '/howto/onlinestatus' },
-            { text: 'Cross Check anfordern', link: '/howto/crosscheck' },
-            { text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
+            //{ text: 'Cross Check anfordern', link: '/howto/crosscheck' },
+            //{ text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
             { text: 'Berechtigungssystem', link: '/howto/manage-permissions' },
-            { text: 'Kuratierte Liste mit Inhalten erstellen', link: '/howto/curated-content-pool' },
-            { text: 'Erste Schritte mit Flyo', link: '/howto/first-steps' },
+            //{ text: 'Kuratierte Liste mit Inhalten erstellen', link: '/howto/curated-content-pool' },
+            //{ text: 'Erste Schritte mit Flyo', link: '/howto/first-steps' },
           ]
         },
       ]
