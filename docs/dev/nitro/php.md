@@ -49,3 +49,10 @@ Für die folgenden PHP-Frameworks stehen Adapter zur Verfügung. Die Adapter üb
 |----|-------|--------------
 |Yii2 Framework|[GitHub](https://github.com/flyocloud/nitro-yii2)|[Yii2 Example App](https://github.com/flyocloud/yii2-zooexample.com)
 |Laravel|[GitHub](https://github.com/flyocloud/nitro-laravel)|[Laravel Example App](https://github.com/flyocloud/laravel-zooexample.com)
+
+## PHP Bridge
+
+Die PHP Bridge ist eine PHP-Bibliothek, die die Kommunikation zwischen dem Flyo Nitro und dem PHP Projekt ermöglicht. Sie beinhaltet Hilfsfunktionen wie z.B. das Handling von WYSIWYG Editor Daten.
+
+
++ [Bridge auf GitHub](https://github.com/flyocloud/nitro-php-bridge)

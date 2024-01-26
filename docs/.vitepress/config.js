@@ -95,6 +95,7 @@ export default {
             {
               text: "Konzepte",
               items: [
+                {text: 'Config', link: '/dev/nitro/config'},
                 {text: 'Environments', link: '/dev/nitro/env'},
                 {text: 'Blocks', link: '/dev/nitro/block'},
                 {text: 'Routing', link: '/dev/nitro/routing'},
@@ -109,7 +110,8 @@ export default {
               items: [
                 { text: 'PHP', link: '/dev/nitro/php' },
                 { text: 'JavaScript', link: '/dev/nitro/javascript' },
-                { text: 'Vue', link: '/dev/nitro/vue' }
+                { text: 'Vue', link: '/dev/nitro/vue' },
+                { text: 'Astro', link: '/dev/nitro/astro' },
               ]
             },
           ]
