@@ -4,4 +4,4 @@ Die How-To-Sektion behandelt nicht-technische Themen und zielt darauf ab, dir da
 
 ## Unterstützung anfordern
 
-Um einen Fehler zu melden oder eine neue Funktion vorzuschlagen, benutze die in die [Flyo-Oberfläche integrierte Supportfunkton](https://flyo.cloud/support) oder sende uns direkt eine E-Mail an [support@flyo.cloud](support@flyo.cloud).
+Um einen Fehler zu melden oder eine neue Funktion vorzuschlagen, benutze die in die [Flyo-Oberfläche integrierte Supportfunkton](https://flyo.cloud/support) oder sende uns direkt eine E-Mail an [support@flyo.cloud](mailto:support@flyo.cloud).
