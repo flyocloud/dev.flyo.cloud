@@ -5,7 +5,7 @@ Content Pools funktionieren wie Ordner für Dateien auf einem Computer und diene
 ![Überblick Content Pools](assets/content-pools-overview.svg)
 
 ::: info Berechtigungen im Kontext von Content Pools
-Mit der Berechtigungslogik für Content Pools wird in erster Linie gesteuert, welche Teammitglieder mit welchen Inhalten in Flyo arbeiten dürfen. [Mehr Informationen](/howto/manage-permissions)
+Mit der Berechtigungslogik für Content Pools wird in erster Linie gesteuert, welche Teammitglieder mit welchen Inhalten in Flyo arbeiten dürfen. Die Berechtigungen können in den Einstellungen des Content Pools im Tab "Berechtigungen" gesteuert werden. --> [Mehr Informationen](/howto/manage-permissions)
 :::
 
 ## Typen von Content Pools
@@ -25,7 +25,7 @@ Eigenschaften:
 ![Kuratierter Content Pool](assets/kuratierte-content-pool-1.svg) 
 
 Erklärung der Icons (v.l.n.r):
-- Reihenfolge anpassen (Drag & Drop)
+- Reihenfolge der Inhalte anpassen (Drag & Drop)
 - Automation erstellen
 - Inhalt zeitbasiert aus dem Content Pool entfernen
 - Inhalt sofort entfernen (Indikation zeigt, dass Inhalt bereits zeitbasiert entfernt wird)
@@ -43,4 +43,34 @@ Eigenschaften:
 - Filter --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
 - Real-Time --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
-Screenshots folgen.
+SCREENSHOT FOLGT
+
+#### 1 --> Verbindungen der Filter
+Definiert, wie die Filterkriterien zueinander in Relation stehen. Bei UND-Verbindungen müssen alle Kriterien additiv erfüllt sein, damit ein Inhalt im Content Pool berücksichtigt wird. Bei einer OR-Verbindung muss eines von x Kriterien erfüllt sein.
+
+#### 2 --> Attribut
+Entspricht dem Filterkriterium. Als Auswahl stehen alle Felder zur Verfügung, die in der gewählten Entität definiert sind
+
+#### 3 --> Vektor
+Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert (Value)
+
+- Entspricht / Entspricht nicht --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird
+- Enthält / Enthält nicht --> Der Value
+- Existiert in / Existiert nicht in --> Der Value
+- Grösser / Grösser gleich als --> Der Value
+- Kleiner / Kleiner gleich als --> Der Value
+
+#### 4 --> Value
+Entspricht dem Wert, nachdem die Inhalte unter Berücksichtigung des Vektors im Content Pool berücksichtigt werden oder nicht
+
+::: info Beispiel
+Postleitzahl (Attribut) --> ist grösser als (Vektor) --> 5000 (Value)
+
+In diesem Beispiel würden im Content Pool alle Points of Interest (Entität) berücksichtigt, die im Feld "Postleitzahl" eine Zahl grösser als 5000 aufweisen.
+:::
+
+#### 5 --> Kriterium hinzufügen
+Es können mehrere Kriterien kombiniert werden. Mehrere Kriterien werden entweder als UND-Verbindung bzw. ODER-Verbindung kombiniert (siehe oben)
+
+#### 6 --> Gruppe hinzufügen
+Es können mehrere Gruppen von Kriterien hinzugefügt werden. Auf Ebene der Gruppen gelten immer UND-Verbindungen.
