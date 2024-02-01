@@ -41,10 +41,11 @@ Für jeden kuratierten Content Pool kann in der Seitenleiste ein Fahrplan (Liste
 ![Kuratierter Content Pool](assets/kuratierte-content-pool-2.svg) 
 
 ### Regelbasierte Content Pools
-Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln organisiert werden. Alle Inhalte, die den definierten Regeln entsprechen, werden in Real-Time in diesem Content Pool dargestellt.
+Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zusammengefasst werden. Alle Inhalte, die den definierten Regeln des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder entfernt.
 
+Eigenschaften:
 - Einzelne Entität --> Ein regelbasierter Content Pool kann Inhalte einer einzelnen Entität beinhalten
-- Filter --> Ein regelbasierter Content Pool kann nach einem oder mehreren Feldern gefiltert werden, die für die entsprechende Entität vorhanden sind (siehe unten)
-- Real-Time --> Inhalte, die in Flyo verändert werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
+- Filter --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
+- Real-Time --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
-Screenshot
+Screenshots folgen.
