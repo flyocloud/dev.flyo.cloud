@@ -45,13 +45,13 @@ Eigenschaften:
 
 SCREENSHOT FOLGT
 
-#### 1 --> Verbindungen der Filter
+#### "one" --> Verbindungen der Filter
 Definiert, wie die Filterkriterien zueinander in Relation stehen. Bei UND-Verbindungen müssen alle Kriterien additiv erfüllt sein, damit ein Inhalt im Content Pool berücksichtigt wird. Bei einer OR-Verbindung muss eines von x Kriterien erfüllt sein.
 
-#### 2 --> Attribut
+#### "two" --> Attribut
 Entspricht dem Filterkriterium. Als Auswahl stehen alle Felder zur Verfügung, die in der gewählten Entität definiert sind
 
-#### 3 --> Vektor
+#### "three" --> Vektor
 Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert (Value)
 
 - **Entspricht / Entspricht nicht** --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird (z.B. "Flyo")
@@ -60,7 +60,7 @@ Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert
 - **Grösser / Grösser gleich als** --> Der Wert im Inhalt muss grösser / grösser gleich sein, als der definierte Value
 - **Kleiner / Kleiner gleich als** --> Der Wert im Inhalt muss kleiner / kleiner gleich sein, als der definierte Value
 
-#### 4 --> Value
+#### "four" --> Value
 Entspricht dem Wert, nachdem die Inhalte unter Berücksichtigung des Vektors im Content Pool berücksichtigt werden oder nicht
 
 ::: info Beispiel
@@ -69,8 +69,8 @@ Postleitzahl (Attribut) --> ist grösser als (Vektor) --> 5000 (Value)
 In diesem Beispiel würden im Content Pool alle Points of Interest (Entität) berücksichtigt, die im Feld "Postleitzahl" eine Zahl grösser als 5000 aufweisen.
 :::
 
-#### 5 --> Kriterium hinzufügen
+#### "five" --> Kriterium hinzufügen
 Es können mehrere Kriterien kombiniert werden. Mehrere Kriterien werden entweder als UND-Verbindung bzw. ODER-Verbindung kombiniert (siehe oben)
 
-#### 6 --> Gruppe hinzufügen
+#### "six" --> Gruppe hinzufügen
 Es können mehrere Gruppen von Kriterien hinzugefügt werden. Auf Ebene der Gruppen gelten immer UND-Verbindungen.
