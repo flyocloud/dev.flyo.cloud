@@ -14,7 +14,7 @@ Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content P
 ### Kuratierte Content Pools
 In einem kuratierten Content Pool können die Inhalte frei bestimmt werden. Inhalte können von Hand oder nach einem Fahrplan oder Trigger Automationen hinzugefügt oder entfernt werden. Ebenso kann die Reihenfolge der Inhalte im Content Pool frei bestimmt werden.
 
-Eigenschaften:
+**Eigenschaften:**
 - **Mehrere Entitäten** --> Ein kuratierter Content Pool kann Inhalte einer oder mehrerer Entitäten beinhalten
 - **Kuratierung** --> Die Reihenfolge der Einträge im Content Pool kann per Drag & Drop gesteuert werden
 - **Fahrplan** --> Jeder Inhalt im Content Pool kann zeitgesteuert einem kuratierten Content Pool hinzugefügt oder daraus entfernt werden
@@ -38,14 +38,14 @@ Für jeden kuratierten Content Pool kann in der Seitenleiste ein Fahrplan (Liste
 ### Regelbasierte Content Pools
 Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zusammengefasst werden. Alle Inhalte, die den definierten Regeln des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder entfernt.
 
-Eigenschaften:
+**Eigenschaften:**
 - **Einzelne Entität** --> Ein regelbasierter Content Pool kann Inhalte einer einzelnen Entität beinhalten
 - **Filter** --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
 - **Aktualisierung** --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
 ![Regelbasierter Content Pool](assets/regelbasierte-content-pool-1.svg)
 
-#### :one: --> Verbindungen der Filter
+#### :one: --> Verbindungen der Filtergruppen
 Definiert, wie die Filterkriterien zueinander in Relation stehen. Bei UND-Verbindungen müssen alle Kriterien additiv erfüllt sein, damit ein Inhalt im Content Pool berücksichtigt wird. Bei einer OR-Verbindung muss eines von x Kriterien erfüllt sein.
 
 #### :two: --> Attribut
