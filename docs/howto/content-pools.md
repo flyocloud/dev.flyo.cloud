@@ -41,7 +41,7 @@ Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zus
 Eigenschaften:
 - Einzelne Entität --> Ein regelbasierter Content Pool kann Inhalte einer einzelnen Entität beinhalten
 - Filter --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
-- Real-Time --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
+- Aktualisierung --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
 SCREENSHOT FOLGT
 
