@@ -19,7 +19,7 @@ Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content P
 ### Kuratierte Content Pools
 In einem kuratierten Content Pool können die Inhalte frei bestimmt werden. Inhalte können von Hand oder nach einem Fahrplan oder Trigger Automationen hinzugefügt oder entfernt werden. Ebenso kann die Reihenfolge der Inhalte im Content Pool frei bestimmt werden.
 
-Screenshot 
+![Kuratierter Content Pool](assets/kuratierte-content-pool-1.svg) 
 
 - Mehrere Entitäten --> Ein kuratierter Content Pool kann Inhalte einer oder mehrerer Entitäten beinhalten
 - Kuratierung --> Die Reihenfolge der Einträge im Content Pool kann per Drag & Drop gesteuert werden
