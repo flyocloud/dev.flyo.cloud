@@ -1,6 +1,6 @@
 # Content Pools
 
-Content Pools funktionieren wie Ordner für Dateien auf einem Computer und dienen dazu, Inhalte für unterschiedliche Anwendungszwecke zu organisieren und zu automatisieren:
+Content Pools funktionieren wie Ordner für Dateien auf einem Computer und dienen dazu, Inhalte für unterschiedliche Anwendungszwecke zu organisieren und zu automatisieren. Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content Pools die Elemente im Pool von Hand definiert werden, stellt Flyo bei regelbasierten Content Pools die Elemente automatisiert anhand von dir festgelegten Filterkriterien zusammen und aktualisiert diese in Real-Time.
 
 ![Überblick Content Pools](assets/content-pools-overview.svg)
 
@@ -8,10 +8,7 @@ Content Pools funktionieren wie Ordner für Dateien auf einem Computer und diene
 Mit der Berechtigungslogik für Content Pools wird in erster Linie gesteuert, welche Teammitglieder mit welchen Inhalten in Flyo arbeiten dürfen. Die Berechtigungen können in den Einstellungen des Content Pools im Tab "Berechtigungen" gesteuert werden. --> [Mehr Informationen](/howto/manage-permissions)
 :::
 
-## Typen von Content Pools
-Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content Pools die Elemente im Pool von Hand definiert werden, stellt Flyo bei regelbasierten Content Pools die Elemente automatisiert anhand von dir festgelegten Filterkriterien zusammen und aktualisiert diese in Real-Time.
-
-### Kuratierte Content Pools
+## Kuratierte Content Pools
 In einem kuratierten Content Pool können die Inhalte frei bestimmt werden. Inhalte können von Hand oder nach einem Fahrplan oder Trigger Automationen hinzugefügt oder entfernt werden. Ebenso kann die Reihenfolge der Inhalte im Content Pool frei bestimmt werden.
 
 **Eigenschaften:**
@@ -35,7 +32,7 @@ Für jeden kuratierten Content Pool kann in der Seitenleiste ein Fahrplan (Liste
 
 ![Kuratierter Content Pool](assets/kuratierte-content-pool-2.svg) 
 
-### Regelbasierte Content Pools
+## Regelbasierte Content Pools
 Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zusammengefasst werden. Alle Inhalte, die den definierten Regeln des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder entfernt.
 
 **Eigenschaften:**
@@ -45,13 +42,13 @@ Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zus
 
 ![Regelbasierter Content Pool](assets/regelbasierte-content-pool-1.svg)
 
-#### :one: --> Verbindungen der Filtergruppen
+### :one: --> Verbindungen der Filtergruppen
 Definiert, wie die Filterkriterien zueinander in Relation stehen. Bei UND-Verbindungen müssen alle Kriterien additiv erfüllt sein, damit ein Inhalt im Content Pool berücksichtigt wird. Bei einer OR-Verbindung muss eines von x Kriterien erfüllt sein.
 
-#### :two: --> Attribut
+### :two: --> Attribut
 Entspricht dem Filterkriterium. Als Auswahl stehen alle Felder zur Verfügung, die in der gewählten Entität definiert sind
 
-#### :three: --> Vektor
+### :three: --> Vektor
 Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert (Value)
 
 - **Entspricht / Entspricht nicht** --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird (z.B. "Flyo")
@@ -60,7 +57,7 @@ Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert
 - **Grösser / Grösser gleich als** --> Der Wert im Inhalt muss grösser / grösser gleich sein, als der definierte Value
 - **Kleiner / Kleiner gleich als** --> Der Wert im Inhalt muss kleiner / kleiner gleich sein, als der definierte Value
 
-#### :four: --> Value
+### :four: --> Value
 Entspricht dem Wert, nachdem die Inhalte unter Berücksichtigung des Vektors im Content Pool berücksichtigt werden oder nicht
 
 ::: info Beispiel
@@ -69,11 +66,11 @@ Postleitzahl (Attribut) --> ist grösser als (Vektor) --> 5000 (Value)
 In diesem Beispiel würden im Content Pool alle Points of Interest (Entität) berücksichtigt, die im Feld "Postleitzahl" eine Zahl grösser als 5000 aufweisen.
 :::
 
-#### :five: --> Kriterium hinzufügen
+### :five: --> Kriterium hinzufügen
 Es können mehrere Kriterien kombiniert werden. Mehrere Kriterien werden entweder als UND-Verbindung bzw. ODER-Verbindung kombiniert (siehe oben)
 
-#### :six: --> Gruppe hinzufügen
+### :six: --> Gruppe hinzufügen
 Es können mehrere Gruppen von Kriterien hinzugefügt werden. Auf Ebene der Gruppen gelten immer UND-Verbindungen.
 
-#### :seven: --> Vorschau
+### :seven: --> Vorschau
 Die Vorschau zeigt in Real-Time an, wie viele Inhalte mit der aktuellen Konfiguration im Content Pool berücksichtigt werden.
