@@ -43,7 +43,7 @@ Eigenschaften:
 - **Filter** --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
 - **Aktualisierung** --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
-SCREENSHOT FOLGT
+![Regelbasierter Content Pool](assets/regelbasierte-content-pool-1.svg)
 
 #### "one" --> Verbindungen der Filter
 Definiert, wie die Filterkriterien zueinander in Relation stehen. Bei UND-Verbindungen müssen alle Kriterien additiv erfüllt sein, damit ein Inhalt im Content Pool berücksichtigt wird. Bei einer OR-Verbindung muss eines von x Kriterien erfüllt sein.
@@ -74,3 +74,6 @@ Es können mehrere Kriterien kombiniert werden. Mehrere Kriterien werden entwede
 
 #### "six" --> Gruppe hinzufügen
 Es können mehrere Gruppen von Kriterien hinzugefügt werden. Auf Ebene der Gruppen gelten immer UND-Verbindungen.
+
+#### "seven" --> Vorschau
+Die Vorschau zeigt in Real-Time an, wie viele Inhalte mit der aktuellen Konfiguration im Content Pool berücksichtigt werden.
