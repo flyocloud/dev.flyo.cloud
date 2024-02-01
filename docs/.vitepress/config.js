@@ -140,6 +140,7 @@ export default {
             //{ text: 'Cross Check anfordern', link: '/howto/crosscheck' },
             //{ text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
             { text: 'Berechtigungssystem', link: '/howto/manage-permissions' },
+            { text: 'Content Pools', link: '/howto/content-pools' },
             //{ text: 'Kuratierte Liste mit Inhalten erstellen', link: '/howto/curated-content-pool' },
             //{ text: 'Erste Schritte mit Flyo', link: '/howto/first-steps' },
           ]
