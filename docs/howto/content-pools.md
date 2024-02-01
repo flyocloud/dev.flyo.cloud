@@ -54,11 +54,11 @@ Entspricht dem Filterkriterium. Als Auswahl stehen alle Felder zur Verfügung, d
 #### 3 --> Vektor
 Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert (Value)
 
-- Entspricht / Entspricht nicht --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird
-- Enthält / Enthält nicht --> Der Value
-- Existiert in / Existiert nicht in --> Der Value
-- Grösser / Grösser gleich als --> Der Value
-- Kleiner / Kleiner gleich als --> Der Value
+- Entspricht / Entspricht nicht --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird (z.B. "Flyo")
+- Enthält / Enthält nicht --> Der Value muss im Inhalt nicht zwingend als exakter Ausruck vorkommen (z.B. "yo" berücksichtigt "Flyo" ebenfalls)
+- Existiert in / Existiert nicht in --> Der Wert im Inhalt muss innerhalb eines (nummerischen) Bereichs vorkommen (z.B Value "5-10" berücksichtigt "6", nicht aber "11")
+- Grösser / Grösser gleich als --> Der Wert im Inhalt muss grösser / grösser gleich sein, als der definierte Value
+- Kleiner / Kleiner gleich als --> Der Wert im Inhalt muss kleiner / kleiner gleich sein, als der definierte Value
 
 #### 4 --> Value
 Entspricht dem Wert, nachdem die Inhalte unter Berücksichtigung des Vektors im Content Pool berücksichtigt werden oder nicht
