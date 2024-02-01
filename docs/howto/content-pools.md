@@ -2,16 +2,11 @@
 
 Content Pools funktionieren wie Ordner für Dateien auf einem Computer und dienen dazu, Inhalte für unterschiedliche Anwendungszwecke zu organisieren und zu automatisieren:
 
-### Content Pools für interne Workflows:
-- Zusammenfassen von Inhalten zu einem bestimmten Thema
-- Freigabe von bestimmten Inhalte zur Bearbeitung für ein Teammitglied
-
-### Content Pools für Integrationen:
-- Sammlung von Inhalten, die auf einer Webseite angezeigt werden sollen
-- Steuern der Sichtbarkeit von Inhalten in einer Integration (z.B. auf einer Webseite) mit Automationen
-- Definition eines Content Fahrplans zur Steuerung der Sichtbarkeit von Inhalten in einer Integration
-
 ![Überblick Content Pools](assets/content-pools-overview.svg)
+
+::: info Berechtigungen im Kontext von Content Pools
+Mit der Berechtigungslogik für Content Pools wird in erster Linie gesteuert, welche Teammitglieder mit welchen Inhalten in Flyo arbeiten dürfen. [Mehr Informationen](/howto/manage-permissions)
+:::
 
 ## Typen von Content Pools
 Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content Pools die Elemente im Pool von Hand definiert werden, stellt Flyo bei regelbasierten Content Pools die Elemente automatisiert anhand von dir festgelegten Filterkriterien zusammen und aktualisiert diese in Real-Time.
