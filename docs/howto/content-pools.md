@@ -15,12 +15,12 @@ Es gibt zwei Typen von Content Pools in Flyo. Während bei kuratierten Content P
 In einem kuratierten Content Pool können die Inhalte frei bestimmt werden. Inhalte können von Hand oder nach einem Fahrplan oder Trigger Automationen hinzugefügt oder entfernt werden. Ebenso kann die Reihenfolge der Inhalte im Content Pool frei bestimmt werden.
 
 Eigenschaften:
-- Mehrere Entitäten --> Ein kuratierter Content Pool kann Inhalte einer oder mehrerer Entitäten beinhalten
-- Kuratierung --> Die Reihenfolge der Einträge im Content Pool kann per Drag & Drop gesteuert werden
-- Fahrplan --> Jeder Inhalt im Content Pool kann zeitgesteuert einem kuratierten Content Pool hinzugefügt oder daraus entfernt werden
-- Trigger --> Die Sichtbarkeit von Inhalten in Integrationen kann zeit- und wetterbasiert gesteuert werden
-- Limit --> Limitieren, wie viele Inhalte in einem Content Pool sein dürfen
-- Duplikate vermeiden --> Verhindert, dass ein Inhalt mehrfach in einen Content Pool eingefügt wird
+- **Mehrere Entitäten** --> Ein kuratierter Content Pool kann Inhalte einer oder mehrerer Entitäten beinhalten
+- **Kuratierung** --> Die Reihenfolge der Einträge im Content Pool kann per Drag & Drop gesteuert werden
+- **Fahrplan** --> Jeder Inhalt im Content Pool kann zeitgesteuert einem kuratierten Content Pool hinzugefügt oder daraus entfernt werden
+- **Trigger** --> Die Sichtbarkeit von Inhalten in Integrationen kann zeit- und wetterbasiert gesteuert werden
+- **Limit** --> Limitieren, wie viele Inhalte in einem Content Pool sein dürfen
+- **Duplikate vermeiden** --> Verhindert, dass ein Inhalt mehrfach in einen Content Pool eingefügt wird
 
 ![Kuratierter Content Pool](assets/kuratierte-content-pool-1.svg) 
 
@@ -39,9 +39,9 @@ Für jeden kuratierten Content Pool kann in der Seitenleiste ein Fahrplan (Liste
 Mit einem regelbasierten Content Pool können Inhalte nach bestimmten Regeln zusammengefasst werden. Alle Inhalte, die den definierten Regeln des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder entfernt.
 
 Eigenschaften:
-- Einzelne Entität --> Ein regelbasierter Content Pool kann Inhalte einer einzelnen Entität beinhalten
-- Filter --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
-- Aktualisierung --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
+- **Einzelne Entität** --> Ein regelbasierter Content Pool kann Inhalte einer einzelnen Entität beinhalten
+- **Filter** --> Als Filterkriterien können Felder angewendet werden, die für die entsprechende Entität konfiguriert wurden
+- **Aktualisierung** --> Inhalte, die bearbeitet werden und neu bzw. nicht mehr den Kriterien des Content Pools entsprechen, werden in Real-Time in den Content Pool hinzugefügt oder daraus entfernt
 
 SCREENSHOT FOLGT
 
@@ -54,11 +54,11 @@ Entspricht dem Filterkriterium. Als Auswahl stehen alle Felder zur Verfügung, d
 #### 3 --> Vektor
 Verbindung von Attribut, also dem Filterkriterium und dem definierten Filterwert (Value)
 
-- Entspricht / Entspricht nicht --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird (z.B. "Flyo")
-- Enthält / Enthält nicht --> Der Value muss im Inhalt nicht zwingend als exakter Ausruck vorkommen (z.B. "yo" berücksichtigt "Flyo" ebenfalls)
-- Existiert in / Existiert nicht in --> Der Wert im Inhalt muss innerhalb eines (nummerischen) Bereichs vorkommen (z.B Value "5-10" berücksichtigt "6", nicht aber "11")
-- Grösser / Grösser gleich als --> Der Wert im Inhalt muss grösser / grösser gleich sein, als der definierte Value
-- Kleiner / Kleiner gleich als --> Der Wert im Inhalt muss kleiner / kleiner gleich sein, als der definierte Value
+- **Entspricht / Entspricht nicht** --> Der Value muss im Inhalt bzw. dem entsprechenden Feld exakt vorkommen, damit der Inhalt berücksichtigt wird (z.B. "Flyo")
+- **Enthält / Enthält nicht** --> Der Value muss im Inhalt nicht zwingend als exakter Ausruck vorkommen (z.B. "yo" berücksichtigt "Flyo" ebenfalls)
+- **Existiert in / Existiert nicht in** --> Der Wert im Inhalt muss innerhalb eines (nummerischen) Bereichs vorkommen (z.B Value "5-10" berücksichtigt "6", nicht aber "11")
+- **Grösser / Grösser gleich als** --> Der Wert im Inhalt muss grösser / grösser gleich sein, als der definierte Value
+- **Kleiner / Kleiner gleich als** --> Der Wert im Inhalt muss kleiner / kleiner gleich sein, als der definierte Value
 
 #### 4 --> Value
 Entspricht dem Wert, nachdem die Inhalte unter Berücksichtigung des Vektors im Content Pool berücksichtigt werden oder nicht
