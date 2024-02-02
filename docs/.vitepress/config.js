@@ -141,7 +141,7 @@ export default {
             //{ text: 'Mehrsprachigkeit von Inhalten', link: '/howto/manage-multilinguality' },
             { text: 'Berechtigungssystem', link: '/howto/manage-permissions' },
             { text: 'Content Pools', link: '/howto/content-pools' },
-            //{ text: 'Kuratierte Liste mit Inhalten erstellen', link: '/howto/curated-content-pool' },
+            { text: 'Einstellungen', link: '/howto/einstellungen-overview' },
             //{ text: 'Erste Schritte mit Flyo', link: '/howto/first-steps' },
           ]
         },
