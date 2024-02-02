@@ -143,6 +143,7 @@ export default {
             { text: 'Content Pools', link: '/howto/content-pools' },
             { text: 'Einstellungen', link: '/howto/einstellungen-overview' },
             //{ text: 'Erste Schritte mit Flyo', link: '/howto/first-steps' },
+            { text: 'Content Workflow', link: '/howto/content-workflow' },
           ]
         },
       ]
