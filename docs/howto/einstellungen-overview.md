@@ -74,7 +74,7 @@ Zu finden unter Bearbeiten. Entfernt die Entität unwiderruflich aus Flyo. Eine 
 ## Social Tags
 Feature wird entfernt.
 
-## Aufräumen
+## Aufräumen
 Aufräumen bietet mehrere Optionen, um Ordnung im Content Management zu wahren und nicht mehr benötigte Inhalte zu entfernen. Verfügbare Aktionen:
 
 - Kuratierte Einträge —> Liste von Content Pools, die möglicherweise nicht mehr benötigte Einträge beinhalten
