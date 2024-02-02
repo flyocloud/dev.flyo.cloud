@@ -20,4 +20,10 @@ Folgende Integrationen stehen aktuell zur Verfügung:
 - OpenAPI-Format --> Entwicklung eigener Adapter (z.B. Java)
 
 ### Werkzeuge
-Die das arbeiten vereinfachen
+Entlang des Content Workflows bietet Flyo einige Tools, um das Content Management so einfach wie möglich zu gestalten:
+
+- Benutzerrollen -->
+- Cross Check -->
+- Notizen -->
+- Aufräumen -->
+- Datenqualität -->
