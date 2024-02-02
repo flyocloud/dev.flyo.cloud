@@ -36,9 +36,11 @@ FUNKTIONEN -> Manager, Externer Admin, Teammitglied
 :::
 
 **Teammitglied löschen**
+
 Entzieht alle Berechtigungen und entfernt das Mitglied aus dem Team
 
 **Neues Teammitglied hinzufügen**
+
 Ein neues Teammitglied wird über den "Hinzufügen-Button" —> Teammitglied erstellt.
 
 ## Benutzerrollen
