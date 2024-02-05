@@ -195,9 +195,7 @@ HTML:
 
 ## HTML-Ausgabe Template
 
-Flyo verwendet das Template-System [Latte](https://latte.nette.org/) im Strict-Modus. Dies bedeutet, dass ausschließlich die grundlegenden Funktionen von Latte genutzt werden können. Latte ist eine einfache, aber leistungsfähige Template-Engine für PHP. Sie zeichnet sich durch leichte Erlernbarkeit und Benutzerfreundlichkeit aus und bietet eine schnelle und effiziente Methode zur Erstellung von HTML.
-
-Variablen können mit der Syntax `${name}` angesprochen werden. Zudem ist es möglich, die Existenz von Variablen zu überprüfen. Dazu werden die Konstrukte `{if $name}`, `{else}` und `{/if}` verwendet. Für die Integration von Einträgen kann `{foreach $items as $item}` sowie `{/foreach}` genutzt werden.
+Variablen können mit `{$name}` angesprochen werden. Erfahre mehr über die [generelle Verwendung der Template-Engine](template.md).
 
 Bei der Arbeit mit den Eigenschaftstypen `Bilder` oder `Dateien` ist die Verwendung einer `foreach`-Schleife erforderlich:
 
@@ -209,14 +207,4 @@ Bei der Arbeit mit den Eigenschaftstypen `Bilder` oder `Dateien` ist die Verwend
     {/if}
   {/foreach}
 </div>
-```
-
-Hier wird überprüft, ob die Variable $image vorhanden ist. Wenn ja, wird das Bild ausgegeben; andernfalls wird eine Nachricht angezeigt, dass das Bild nicht existiert.
-
-```
-{% if $image %}
-  <img src="{$image}" />
-{% else %}
-  Das Bild existiert nicht.
-{% endif %}
 ```

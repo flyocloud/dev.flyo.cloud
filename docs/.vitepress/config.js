@@ -67,6 +67,7 @@ export default {
             { text: 'Content Pools', link: '/dev/infos/pools'},
             { text: 'Inhalt Mapping', link: '/dev/infos/mapping'},
             { text: 'Rate Limit', link: '/dev/infos/ratelimit'},
+            { text: 'Template Engine', link: '/dev/infos/template'},
             { text: 'WYSIWYG Editor', link: '/dev/infos/wysiwyg'},
           ]
         },
