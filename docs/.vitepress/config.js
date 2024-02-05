@@ -2,6 +2,7 @@ export default {
   title: 'Flyo Helpcenter',
   description: 'Flyo Helpcenter',
   lang: 'de-DE',
+  cleanUrls: true,
   themeConfig: {
     externalLinkIcon: true,
     search: {
