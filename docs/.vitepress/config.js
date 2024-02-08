@@ -16,8 +16,9 @@ export default {
     logo: {light: '/assets/logo.png', dark: '/assets/logodark.png'},
     outlineTitle: 'Abschnitte',
     socialLinks: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/showcase/77006201'},
-      { icon: 'github', link: 'https://github.com/flyocloud' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/company/77006201'},
+      { icon: 'github', link: 'https://github.com/flyocloud' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@flyocloud'},
     ],
     docFooter: {
       prev: 'Vorherige Seite',
