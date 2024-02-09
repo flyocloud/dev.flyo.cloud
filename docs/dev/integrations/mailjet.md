@@ -14,6 +14,7 @@ https://www.flyo.ch/story/mailjet-flyo-integration
 :::
 
 ### Metrik Pixel
+
 Um [Metriken](../infos/metrics.md) für einen Newsletter einzurichten, müssen zunächst die Metrikdaten als Variable (1) verfügbar gemacht werden. Anschließend müssen sie innerhalb des jeweiligen Elements in ein `mj-raw`-Tag (2) eingebettet werden. Dies ermöglicht die effektive Verfolgung und Analyse von Newsletter-Metriken.
 
 ![Alle benötigten Bedienflächen](assets/mailjet/mjml-metric.png)
@@ -26,10 +27,10 @@ Beispiel Code:
         <mj-image src="{image}" alt="" padding-bottom="20px" padding-top="20px"></mj-image>
     </mj-column>
     <mj-column width="50%" vertical-align="middle">
-        <mj-text align="left">{title}<br /><br />{teaser}</mj-text>
+        <mj-text align="left">{$title}<br /><br />{$teaser}</mj-text>
     </mj-column>
 </mj-section>
-<mj-raw>{metric}</mj-raw>
+<mj-raw>{$metric}</mj-raw>
 ```
 
 Wenn der Newsletter geöffnet wird und das Tracking-Pixel nicht von einem E-Mail-Client blockiert wird, erfolgt nun für jeden Eintrag eine Metrikerfassungsanfrage.
