@@ -24,7 +24,7 @@ Beispiel Code:
 ```html
 <mj-section full-width="full-width">
     <mj-column width="50%">
-        <mj-image src="{image}" alt="" padding-bottom="20px" padding-top="20px"></mj-image>
+        <mj-image src="{$image}" alt="" padding-bottom="20px" padding-top="20px"></mj-image>
     </mj-column>
     <mj-column width="50%" vertical-align="middle">
         <mj-text align="left">{$title}<br /><br />{$teaser}</mj-text>
