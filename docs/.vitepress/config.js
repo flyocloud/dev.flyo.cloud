@@ -102,6 +102,7 @@ export default {
                 {text: 'Environments', link: '/dev/nitro/env'},
                 {text: 'Blocks', link: '/dev/nitro/block'},
                 {text: 'Routing', link: '/dev/nitro/routing'},
+                {text: 'Entitäten', link: '/dev/nitro/entities'},
                 {text: 'Seiten Eigenschaften', link: '/dev/nitro/properties'},
                 {text: 'Suchen', link: '/dev/nitro/search'},
                 {text: 'Sitemaps', link: '/dev/nitro/sitemap'},
