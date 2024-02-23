@@ -6,7 +6,7 @@ import ChangeLog from '../components/ChangeLog.vue'
 
 Flyo ist eine proprietäre Software, weshalb der Quellcode nicht frei zugänglich ist. Wir möchten unseren Kunden aber grösstmögliche Transparenz bieten und veröffentlichen deshalb für die neusten Releases ein Changelog. Unser Release-Zyklus umfasst wöchentliche Updates für die produktive Flyo-Umgebung.
 
-Die Versionierung (Nummerierung) bezieht sich auf die gesamte Flyo-Infrastruktur. Die einzelnen Dienste (z.B `api`, `app`, `nitro`, `connect`, `payment`, `map` oder `embed`) verfügen über eigene Versionierungen und Release-Zyklen. Den Status der einzelnen Dienste findest du im [Status Monitor](https://status.flyo.cloud).
+Die Versionierung (Nummerierung) bezieht sich auf die gesamte Flyo-Infrastruktur. Die einzelnen Dienste (z.B `api`, `app`, `nitro`, `connect`, `payment`, `map`, `venue` oder `embed`) verfügen über eigene Versionierungen und Release-Zyklen. Den Status der einzelnen Dienste findest du im [Status Monitor](https://status.flyo.cloud).
 
 <Suspense>
   <ChangeLog />
