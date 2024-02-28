@@ -18,9 +18,9 @@ Die Tokens werden normalerweise in sogenannten Umgebungsvariablen `ENVIRONMENT` 
 
 Wenn eine Eingabe in Flyo erfolgt, steht sie unmittelbar über den DEV-Token zur Verfügung. Das bedeutet, dass man nicht auf "Speichern" klicken muss, um Inhalte direkt über dieses Token von der API abzurufen. Wenn der "Speichern"-Button geklickt wird, werden alle Änderungen des DEV-Token überschrieben. Hintergrundprozesse werden nicht in die DEV-Token-Umgebung übertragen, es sei denn, es wurden Änderungen in der Benutzeroberfläche vorgenommen. Beispielsweise wird ein neuer Eintrag zu einem Content Pool in der DEV-Umgebung nicht direkt sichtbar, es sei denn, man nimmt Änderungen in der Zuordnung dieses Blocks vor oder erneuert alle Änderungen durch Klicken auf den "Speichern"-Button.
 
-## DEV-Token Caveats
-
+::: warning DEV-Token Caveats
 Wenn Daten im Hintergrund aktualisiert werden, zum Beispiel wenn ein kuratierter Content-Pool neu sortiert wird, führt dies einen Job im Hintergrund aus, der alle Integrationen aktualisiert. Dies gilt jedoch nicht für die Inhalte des DEV-Tokens. Der Grund für dieses Verhalten liegt darin, dass ansonsten aktuelle Änderungen im DEV-Token von anderen Flyo-Benutzern überschrieben werden könnten. Um also die neue Sortierung des kuratierten Content-Pools zu sehen, muss über die Nitro-Integration und den Preview-Frame gearbeitet werden. Diese stellt sicher, dass die aktuellsten Daten geladen werden. Durch das Öffnen des Inhalts im Nitro-Preview-Frame wird sofort der aktuellste Stand der Daten in die DEV-Token-Umgebung geladen und angezeigt.
+:::
 
 ## Aktualisierung mit DEV-Token / Entwicklungs-Token
 
