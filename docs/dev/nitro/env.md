@@ -24,7 +24,7 @@ Wenn Daten im Hintergrund aktualisiert werden, zum Beispiel wenn ein kuratierter
 
 ## Aktualisierung mit DEV-Token / Entwicklungs-Token
 
-![Nitro Refresh](assets/preview.png)foo bae
+![Nitro Refresh](assets/preview.png)
 
 Wenn in Nitro die Vorschau über ein iFrame eingebunden wird, löst jede Änderung des DEV-Tokens das Ereignis "pageRefresh" aus. Dieses Ereignis kann abgefangen werden, um eine Seitenaktualisierung zu erzwingen und somit auch eine Live-Vorschau für serverbasierte Programmiersprachen einzubauen. Hier ist ein Beispiel in JavaScript:
 
