@@ -4,6 +4,10 @@ Flyo verwendet die Template Engine an verschiedenen Stellen, wie z.B. für die E
 
 Um Variablen anzusprechen, verwende die Syntax `${name}`. Die Existenz von Variablen kannst du mit den Konstrukten `{if $name}`, `{else}` und `{/if}` überprüfen. Für die Integration von Einträgen in deine Templates nutze `{foreach $items as $item}` und `{/foreach}`.
 
+::: warning Abstand in Variable Name
+Achtung, der Syntax `${ name }` ist nicht valid, es dürfen keine Leerzeichen verwendet werden, um auf eine Variable zuzugreifen. ~~`${ name }`~~ ➔ `${name}`
+:::
+
 Schauen wir uns ein Beispiel an, wie du prüfen kannst, ob die Variable `$image` vorhanden ist. Wenn ja, wird das Bild angezeigt; andernfalls erscheint eine Meldung, dass das Bild nicht existiert:
 
 ```html
