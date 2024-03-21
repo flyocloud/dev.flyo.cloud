@@ -11,11 +11,11 @@ Achtung, der Syntax `${ name }` ist nicht valid, es dürfen keine Leerzeichen ve
 Schauen wir uns ein Beispiel an, wie du prüfen kannst, ob die Variable `$image` vorhanden ist. Wenn ja, wird das Bild angezeigt; andernfalls erscheint eine Meldung, dass das Bild nicht existiert:
 
 ```html
-{% if $image %}
+{if $image}
   <img src="{$image}" alt="Bildbeschreibung" />
-{% else %}
+{else}
   Das Bild existiert nicht.
-{% endif %}
+{/if}
 ```
 
 Nun zu weiteren Codebeispielen, die zeigen, wie du Latte für verschiedene Aufgaben nutzen kannst.
@@ -26,9 +26,9 @@ Um eine Liste von Items durchzugehen, kannst du `foreach` verwenden. Hier ein Be
 
 ```html
 <ul>
-{% foreach $products as $product %}
+{foreach $products as $product}
   <li>{$product->name}</li>
-{% endforeach %}
+{/foreach}
 </ul>
 ```
 
@@ -37,11 +37,11 @@ Um eine Liste von Items durchzugehen, kannst du `foreach` verwenden. Hier ein Be
 Du kannst mit `if`-Anweisungen Bedingungen in deinem Template setzen. Hier ein Beispiel, wie du prüfen kannst, ob ein Benutzer eingeloggt ist:
 
 ```html
-{% if $loggedIn %}
+{if $loggedIn}
   Willkommen zurück, {$username}!
-{% else %}
+{else}
   Bitte logge dich ein, um fortzufahren.
-{% endif %}
+{/if}
 ```
 
 ### Variablen und Filter
