@@ -13,6 +13,22 @@ Seitens Mailjet kann pro Konto resp. Unterkonto nur 1 API-Key gelöst werden. Da
 https://www.flyo.ch/story/mailjet-flyo-integration
 :::
 
+### Iteration von Inhalten
+
+Du kannst mit der [Template Engine](../infos/template.md) Daten, zum Beispiel aus einer Relation, iterieren. Dafür verwendest du einen `foreach`-Block, der üblicherweise in einer Section eingesetzt wird, um die darin enthaltenen Elemente zu wiederholen. Standardmäßig konvertiert die Integration alle Array-Inhalte in eine kommagetrennte Liste, was für viele Situationen ausreichend ist. Wenn du jedoch das Array erneut benötigst, kannst du den Filter "Zeichenkette Teilen" verwenden, um aus der kommagetrennten Liste wieder ein Array zu erstellen, über das du anschließend mit `foreach` iterieren kannst.
+
+![Explode](assets/mailjet/array-foreach.png)
+
+```html
+<mj-section>
+    <mj-column>
+        {foreach $labels as $label}>
+            <mj-text>{$label}</mj-text>
+        {/foreach}
+    </mj-column>
+</mj-section>
+```
+
 ### Metrik Pixel
 
 Um [Metriken](../infos/metrics.md) für einen Newsletter einzurichten, müssen zunächst die Metrikdaten als Variable (1) verfügbar gemacht werden. Anschließend müssen sie innerhalb des jeweiligen Elements in ein `mj-raw`-Tag (2) eingebettet werden. Dies ermöglicht die effektive Verfolgung und Analyse von Newsletter-Metriken.
