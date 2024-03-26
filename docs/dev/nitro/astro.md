@@ -8,5 +8,6 @@ Die Integration des Flyo Nitro Astro Frameworks bietet eine umfassende Lösung f
 + **Integration des Bildservices**: Verstehen Sie die Integration des Bildservices von Flyo Storage, wie in der [Flyo Storage Dokumentation](https://dev.flyo.cloud/dev/infos/images.html) detailliert beschrieben. Dieser Abschnitt vertieft sich in die Arbeit mit Bildern in Astro, einschließlich Hochladen, Abrufen und Anzeigen von Bildern aus Flyo Storage.
 + **Extraktion von Meta-Informationen**: Der Leitfaden schließt mit der Extraktion und Nutzung von Meta-Informationen ab und diskutiert die Bedeutung von Meta-Tags für SEO und Benutzerengagement innerhalb des Astro-Frameworks.
 
-+ [Astro auf NPM](https://www.npmjs.com/package/@flyo/nitro-astro)
-+ [Astro SDK auf GitHub](https://github.com/flyocloud/nitro-astro)
+|Name|Package|Example Project
+|----|-------|--------------
+|Astro Framework|[NPM](https://www.npmjs.com/package/@flyo/nitro-astro)|[Astro Example App](https://github.com/flyocloud/astro-zooexample.com)
