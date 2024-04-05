@@ -14,7 +14,5 @@ Die Versionierung (Nummerierung) bezieht sich auf die gesamte Flyo-Infrastruktur
     Die Changelog Daten werden geladen ...
   </template>
 </Suspense>
-
 ---
-
 *Es werden die neusten 15 Einträge angezeigt.*
