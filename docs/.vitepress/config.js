@@ -28,9 +28,9 @@ export default {
       message: 'All rights reserved. Proudly developed in Switzerland by Heartbeat GmbH.'
     },
     nav: [
-      { text: 'ℹ️ Allgemeines', link: '/dev/' },
-      { text: '🚀 Integrationen', link: '/integrations/' },
-      { text: '🐼 Nitro CMS', link: '/nitro/' },
+      { text: 'ℹ️ Allgemeines', link: '/dev/', activeMatch: '/dev/'},
+      { text: '🚀 Integrationen', link: '/integrations/', activeMatch: '/integrations/'},
+      { text: '🐼 Nitro CMS', link: '/nitro/', activeMatch: '/nitro/' },
       {
         text: 'Flyo',
         items: [
