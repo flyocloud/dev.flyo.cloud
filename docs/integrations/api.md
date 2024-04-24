@@ -1,6 +1,6 @@
 # API Integration
 
-Die API-Integration erlaubt es, Content Pools über eine REST API auszugeben. Jede Zeile (Row) aus der API beinhaltet ein zusätzliches Feld `metric`, um die Impressionen messen zu können. Siehe dazu auch [Flyo Metrics System](../infos/metrics).
+Die API-Integration erlaubt es, Content Pools über eine REST API auszugeben. Jede Zeile (Row) aus der API beinhaltet ein zusätzliches Feld `metric`, um die Impressionen messen zu können. Siehe dazu auch [Flyo Metrics System](../dev/infos/metrics).
 
 ## Parameter
 

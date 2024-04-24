@@ -48,8 +48,8 @@ Dies Datei erklärt mit einem Beispiel, welche Daten für eine Applet-Entwicklun
 + title: Titel
 + teaser: Teaser
 + uid: Eine Unique ID
-+ metric: Die API für alfälliges Tracking mittels [Flyo Metrics System](../infos/metrics.md)
-+ qrcode: Ein Base64 encoded QR Code der beim scannen eine [Metric Impression](../infos/metrics.md) auslöst.
++ metric: Die API für alfälliges Tracking mittels [Flyo Metrics System](../dev/infos/metrics.md)
++ qrcode: Ein Base64 encoded QR Code der beim scannen eine [Metric Impression](../dev/infos/metrics.md) auslöst.
 + entity_id: Die ID der Entität
 + entity_type: Der Typ, welcher zu dieser Entität gehört, z.B `file`, `event`, `poi`, `tag`
 + pool_id: Der Pool welcher verwendet wird.

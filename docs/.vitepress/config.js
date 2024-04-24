@@ -28,11 +28,13 @@ export default {
       message: 'All rights reserved. Proudly developed in Switzerland by Heartbeat GmbH.'
     },
     nav: [
-      { text: '⚡ Entwickler', link: '/dev/' },
-      { text: '📚 Helpcenter', link: 'https://flyo.zendesk.com/hc' },
+      { text: 'ℹ️ Allgemeines', link: '/dev/' },
+      { text: '🚀 Integrationen', link: '/integrations/' },
+      { text: '🐼 Nitro CMS', link: '/nitro/' },
       {
         text: 'Flyo',
         items: [
+          { text: '📚 Helpcenter', link: 'https://flyo.zendesk.com/hc' },
           {
             text: 'Cloud Login',
             link: 'https://flyo.cloud',
@@ -60,10 +62,8 @@ export default {
     sidebar: {
       '/dev/': [
         {
-          collapsed: false,
-          text: 'Allgemeines',
           items: [
-            { text: 'Home', link: '/dev/index'},
+            { text: 'Voraussetzung & Glossar', link: '/dev/index'},
             { text: 'Bilder', link: '/dev/infos/images' },
             { text: 'Metriken', link: '/dev/infos/metrics' },
             { text: 'Content Pools', link: '/dev/infos/pools'},
@@ -73,53 +73,52 @@ export default {
             { text: 'WYSIWYG Editor', link: '/dev/infos/wysiwyg'},
           ]
         },
+      ],
+      '/integrations/': [
         {
-          collapsed: false,
-          text: 'Integrationen',
           items: [
-            { text: 'Embed', link: '/dev/integrations/embed' },
-            { text: 'Karte', link: '/dev/integrations/map' },
-            { text: 'Hook', link: '/dev/integrations/hooks' },
-            { text: 'API', link: '/dev/integrations/api' },
-            { text: 'API SDK', link: '/dev/integrations/sdk' },
-            { text: 'Webflow', link: '/dev/integrations/webflow' },
-            { text: 'SignageOS', link: '/dev/integrations/signageos' },
-            { text: 'Adobe Indesign', link: '/dev/integrations/indesign' },
-            { text: 'Mailjet', link: '/dev/integrations/mailjet' },
-            { text: 'Shopify', link: '/dev/integrations/shopify' },
-            { text: 'Webseite Baukasten', link: '/dev/integrations/websitebuilder' },
+            { text: 'Embed', link: '/integrations/embed' },
+            { text: 'Karte', link: '/integrations/map' },
+            { text: 'Hook', link: '/integrations/hooks' },
+            { text: 'API', link: '/integrations/api' },
+            { text: 'API SDK', link: '/integrations/sdk' },
+            { text: 'Webflow', link: '/integrations/webflow' },
+            { text: 'SignageOS', link: '/integrations/signageos' },
+            { text: 'Adobe Indesign', link: '/integrations/indesign' },
+            { text: 'Mailjet', link: '/integrations/mailjet' },
+            { text: 'Shopify', link: '/integrations/shopify' },
+            //{ text: 'Webseite Baukasten', link: '/integrations/websitebuilder' },
+          ]
+        },
+      ],
+      '/nitro/': [
+        {
+          items: [
+            { text: 'Grundlagen', link: '/nitro/' },
           ]
         },
         {
-          collapsed: false,
-          text: 'Nitro Headless CMS',
+          text: "Konzepte",
           items: [
-            { text: 'Grundlagen', link: '/dev/nitro/' },
-            {
-              text: "Konzepte",
-              items: [
-                {text: 'Config', link: '/dev/nitro/config'},
-                {text: 'Environments', link: '/dev/nitro/env'},
-                {text: 'Blocks', link: '/dev/nitro/block'},
-                {text: 'Routing', link: '/dev/nitro/routing'},
-                {text: 'Entitäten', link: '/dev/nitro/entities'},
-                {text: 'Seiten Eigenschaften', link: '/dev/nitro/properties'},
-                {text: 'Suchen', link: '/dev/nitro/search'},
-                {text: 'Sitemaps', link: '/dev/nitro/sitemap'},
-              ]
-            },
-            {
-              text: "SDKs",
-              collapsed: true,
-              items: [
-                { text: 'PHP', link: '/dev/nitro/php' },
-                { text: 'JavaScript', link: '/dev/nitro/javascript' },
-                { text: 'Vue', link: '/dev/nitro/vue' },
-                { text: 'Astro', link: '/dev/nitro/astro' },
-              ]
-            },
+            {text: 'Config', link: '/nitro/config'},
+            {text: 'Environments', link: '/nitro/env'},
+            {text: 'Blocks', link: '/nitro/block'},
+            {text: 'Routing', link: '/nitro/routing'},
+            {text: 'Entitäten', link: '/nitro/entities'},
+            {text: 'Seiten Eigenschaften', link: '/nitro/properties'},
+            {text: 'Suchen', link: '/nitro/search'},
+            {text: 'Sitemaps', link: '/nitro/sitemap'},
           ]
-        }
+        },
+        {
+          text: "SDKs",
+          items: [
+            { text: 'PHP', link: '/nitro/php' },
+            { text: 'JavaScript', link: '/nitro/javascript' },
+            { text: 'Vue', link: '/nitro/vue' },
+            { text: 'Astro', link: '/nitro/astro' },
+          ]
+        },
       ]
     }
   }

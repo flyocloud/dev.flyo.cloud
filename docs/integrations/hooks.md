@@ -8,7 +8,7 @@ Ein Hook ist ein praktisches Mittel, um eine Synchronisation von Daten auszulös
 
 ## Zeitpunkt
 
-Der Hook wird aktiviert, wenn sich mindestens eines der nachfolgenden Ereignisse im gewählten [Content Pool](../infos/pools) ereignet.
+Der Hook wird aktiviert, wenn sich mindestens eines der nachfolgenden Ereignisse im gewählten [Content Pool](../dev/infos/pools) ereignet.
 
 + Ein neuer Eintrag im Pool
 + Ein Eintrag wird aus dem Pool entfernt
