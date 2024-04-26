@@ -18,10 +18,10 @@ Wichtige Links:
 ## Applet Upload
 
 ::: warning Upload nur via CLI
-Das Applet muss (Stand: August 2022) via CLI in die SignageOS-Plattform hochgeladen werden und setzt technisches Wissen voraus.
+Das Applet muss (Stand: April 2024) via CLI in die SignageOS-Plattform hochgeladen werden und setzt technisches Wissen voraus.
 :::
 
-Um ein Applet auf SignageOS hochzuladen, muss der Applet Code vorliegen. In diesem Beispiel verwenden wir das [Flyo Beispiel Applet](https://github.com/flyocloud/signageos-example).
+Um ein Applet auf SignageOS hochzuladen, muss der Applet Code vorliegen. In diesem Beispiel verwenden wir das [Flyo Beispiel Applet](https://github.com/flyocloud/signageos-vue2-example).
 
 1. Clone das Repository (oder dein eigenes) auf deinen Computer `git clone https://github.com/flyocloud/signageos-vue2-example.git` oder `https://github.com/flyocloud/signageos-js-example`
 2. Führe im Ordner des Clones den Befehl `npm install` aus.
