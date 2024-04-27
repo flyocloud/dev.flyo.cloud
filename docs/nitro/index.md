@@ -1,5 +1,7 @@
 # Nitro Headless CMS Grundlagen
 
+<iframe style="width:100%; margin-top:40px; margin-bottom:40px;" height="315" src="https://www.youtube.com/embed/QRB2NzMkvNA?si=mzd1UfRPgFR7WKpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Das Flyo Nitro ist ein Headless Content Management System, das die Inhalte von Entitäten (Inhaltstypen) und klassischen statischen Inhaltselementen (Blöcken) miteinander verbindet. Die Website wird mithilfe eines "Site-Trees" oder einer Navigation aufgebaut, wobei Inhalte entweder über [Mapping](../dev/infos/mapping) oder durch Verwendung statischer Blöcke hinzugefügt werden können.
 
 :::info Erkunde diese Ressourcen, um ein besseres Verständnis der Nitro-Integration zu erhalten und deine Integrationsprojekte erfolgreich umzusetzen:
