@@ -23,3 +23,6 @@ features:
     details: Ein Headless Content Management System, welches Inhalte aus Entitäten und klassische, statische Inhaltselemente verbindet.
     link: /nitro/
 ---
+
+
+<iframe style="width:100%; margin-top:80px;"  height="500" src="https://www.youtube.com/embed/t8TwaPgkSLI?si=8QmFFLc_o-MegHyz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
