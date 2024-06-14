@@ -95,6 +95,7 @@ export default {
         {
           items: [
             { text: 'Grundlagen', link: '/nitro/' },
+            { text: 'API-Reference', link: 'https://nitro-openapi.flyo.cloud/'}
           ]
         },
         {
@@ -102,10 +103,10 @@ export default {
           items: [
             {text: 'Config', link: '/nitro/config'},
             {text: 'Environments', link: '/nitro/env'},
-            {text: 'Blocks', link: '/nitro/block'},
-            {text: 'Routing', link: '/nitro/routing'},
+            {text: 'Seiten', link: '/nitro/pages'},
+            {text: 'Blocks / Komponenten', link: '/nitro/block'},
             {text: 'Entitäten', link: '/nitro/entities'},
-            {text: 'Seiten Eigenschaften', link: '/nitro/properties'},
+            {text: 'Routing', link: '/nitro/routing'},
             {text: 'Suchen', link: '/nitro/search'},
             {text: 'Sitemaps', link: '/nitro/sitemap'},
           ]

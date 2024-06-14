@@ -1,4 +1,6 @@
-# DEV vs PROD Token
+# Environments
+
+## DEV vs PROD Token
 
 Die Unterscheidung zwischen DEV/Entwicklungs- und PROD/Produktiv-Token ermöglicht eine bessere Unterscheidung von Entwicklungs- und Produktionsinhalten. DEV-Token werden in der Entwicklungsphase verwendet, um den Zugriff auf temporäre Inhalte zu ermöglichen. PROD-Token hingegen werden in der Produktionsumgebung eingesetzt, um den Zugriff nur auf gespeicherte Inhalte zu gewähren.
 
