@@ -1,6 +1,6 @@
 # API SDK Integration
 
-Die Integration `API SDK` erstellt eine OpenApi-Datei mit den ausgewählten Pools. Die OpenApi-Datei kann mittels Generator in ein SDK verwandelt werden, welches der gewünschten Programmiersprache entspricht. Die OpenAPI-Datei beschreibt die Endpunkte und kann auch als Dokumentation verwendet werden, um die Endpunkte zu konsumieren ohne ein SDK zu generieren.
+Die Integration `API SDK` erstellt eine OpenApi-Datei mit den ausgewählten [Content Pools](../dev/infos/pools.md). Die OpenApi-Datei kann mittels Generator in ein SDK verwandelt werden, welches der gewünschten Programmiersprache entspricht. Die OpenAPI-Datei beschreibt die Endpunkte und kann auch als Dokumentation verwendet werden, um die Endpunkte zu konsumieren ohne ein SDK zu generieren.
 
 Alle Endpunkte sind automatisch für CORS Anfragen freigegeben.
 
