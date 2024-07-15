@@ -28,12 +28,7 @@ Recpatcha JavaScript Framework Libraries:
 
 ### Eintrag erstellen (POST)
 
-Einträge, welche über die API SDK Schnittstellen in Flyo erstellt werden, erhalten standardmässig den Status `zu prüfen` und erscheinen somit automatisch im Benutzer-Digest und der Benachrichtigungsleiste. Somit wird sichergestellt, dass die Einträge nicht direkt online sind. Man muss diese also von Hand onlineschalten oder, wenn der Datensatz fehlerhaft oder nicht benötigt wird, löschen. 
-
-::: tip Events generieren Veranstaltungsvorschlag
-Veranstaltungen haben einen speziellen Stellenwert. Aus diesem Grund werden im SDK die Veranstaltungen (Events) zuerst in den `Veranstaltungsvorschläge` Funnel hinzugefügt, von dort können diese angenommen oder abgelehnt werden.
-![OpenAPI JSON](assets/sdk/eventsinbox.png)
-:::
+Einträge, welche über die API SDK Schnittstellen in Flyo erstellt werden, erhalten standardmässig den Status `zu prüfen` und erscheinen somit automatisch im Benutzer-Digest und der Benachrichtigungsleiste. Somit wird sichergestellt, dass die Einträge nicht direkt online sind. Man muss diese also von Hand onlineschalten oder, wenn der Datensatz fehlerhaft oder nicht benötigt wird, löschen.
 
 ### Eintrag aktualisieren (PUT)
 
