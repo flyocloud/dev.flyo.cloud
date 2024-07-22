@@ -87,7 +87,6 @@ export default {
             { text: 'Adobe Indesign', link: '/integrations/indesign' },
             { text: 'Mailjet', link: '/integrations/mailjet' },
             { text: 'Shopify', link: '/integrations/shopify' },
-            //{ text: 'Webseite Baukasten', link: '/integrations/websitebuilder' },
           ]
         },
       ],
