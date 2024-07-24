@@ -1,15 +1,14 @@
 ## Integrationen
 
-Zur Verfügung stehende Integrationen:
+Zur Verfügung stehende folgenden Integrations-Typen:
 
-+ [Webflow Integration](webflow.md)
-+ [Embed Integration](embed.md)
-+ [Map Integration](map.md)
-+ [Hook Integration](hooks.md)
-+ [API Integration](api.md)
-+ [API SDK Integration](sdk.md)
-+ [SignageOS Integration](signageos.md)
-+ [Adobe Indesign Integration](indesign.md)
-+ [Mailjet Integration](mailjet.md)
-+ [Shopify Integration](shopify.md)
-+ [Webseite Baukasten](websitebuilder)
++ [Embed](embed.md)
++ [Map](map.md)
++ [Hook](hooks.md)
++ [API](api.md)
++ [API SDK](sdk.md)
++ [Webflow](webflow.md)
++ [SignageOS](signageos.md)
++ [Adobe Indesign](indesign.md)
++ [Mailjet](mailjet.md)
++ [Shopify](shopify.md)

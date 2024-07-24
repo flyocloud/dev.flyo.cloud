@@ -77,6 +77,13 @@ export default {
       '/integrations/': [
         {
           items: [
+            { text: 'Integrationen', link: '/integrations/' },
+            { text: 'Auslöser Verzögerung', link: '/integrations/delay' },
+          ]
+        },
+        {
+          text: 'Integrations-Typen',
+          items: [
             { text: 'Embed', link: '/integrations/embed' },
             { text: 'Karte', link: '/integrations/map' },
             { text: 'Hook', link: '/integrations/hooks' },
