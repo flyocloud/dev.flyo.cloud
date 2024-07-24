@@ -24,6 +24,8 @@ Wenn eine Eingabe in Flyo erfolgt, steht sie unmittelbar über den DEV-Token zur
 Wenn Daten im Hintergrund aktualisiert werden, zum Beispiel wenn ein kuratierter Content-Pool neu sortiert wird, führt dies einen Job im Hintergrund aus, der alle Integrationen aktualisiert. Dies gilt jedoch nicht für die Inhalte des DEV-Tokens. Der Grund für dieses Verhalten liegt darin, dass ansonsten aktuelle Änderungen im DEV-Token von anderen Flyo-Benutzern überschrieben werden könnten. Um also die neue Sortierung des kuratierten Content-Pools zu sehen, muss über die Nitro-Integration und den Preview-Frame gearbeitet werden. Diese stellt sicher, dass die aktuellsten Daten geladen werden. Durch das Öffnen des Inhalts im Nitro-Preview-Frame wird sofort der aktuellste Stand der Daten in die DEV-Token-Umgebung geladen und angezeigt.
 :::
 
+Der DEV-Token wird nicht zu den Credits gerechnet (verzeichnet keine Requests) bis die Webseite auf "Online" geschalten wird, bis dahin ist der Production-Token inaktiv.
+
 ## Aktualisierung mit DEV-Token / Entwicklungs-Token
 
 ![Nitro Refresh](assets/preview.png)
