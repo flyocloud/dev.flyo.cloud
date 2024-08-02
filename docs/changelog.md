@@ -9,7 +9,9 @@ Flyo ist eine proprietäre Software, weshalb der Quellcode nicht frei zugänglic
 Die Versionierung (Nummerierung) bezieht sich auf die gesamte Flyo-Infrastruktur. Die einzelnen Dienste (z.B `api`, `app`, `connect`, `payment`, `map`, `venue` oder `embed`) verfügen über eigene Versionierungen und Release-Zyklen. Den Status der einzelnen Dienste findest du im [Status Monitor](https://status.flyo.cloud).
 
 <Suspense>
-  <ChangeLog />
+  <template #default>
+    <ChangeLog />
+  </template>
   <template #fallback>
     Die Changelog Daten werden geladen ...
   </template>
