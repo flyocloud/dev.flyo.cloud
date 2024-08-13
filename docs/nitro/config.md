@@ -1,4 +1,4 @@
-# Config
+# Konfiguration (Config)
 
 Der Konfigurations-API-Endpunkt bietet umfassende Informationen, die für die Konfiguration des Layouts von Websites erforderlich sind. Er umfasst verschiedene wesentliche Elemente, darunter Container mit Seiten, eine umfangreiche Liste verfügbarer Slugs, Globals, die Daten des Inhalts-Pools enthalten, und wichtige Details über die Nitro-Konfiguration selbst. Durch den Zugriff auf diesen Endpunkt können Entwickler alle notwendigen Daten sammeln, um ihre Websites effektiv zu gestalten und zu strukturieren. Der Endpunkt bietet einen ganzheitlichen Blick auf das Layout der Website und ermöglicht es Entwicklern, das Benutzererlebnis anzupassen und das Gesamtdesign zu optimieren.
 
