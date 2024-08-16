@@ -94,6 +94,7 @@ export default {
             { text: 'Adobe Indesign', link: '/integrations/indesign' },
             { text: 'Mailjet', link: '/integrations/mailjet' },
             { text: 'Shopify', link: '/integrations/shopify' },
+            { text: 'Venue', link: '/integrations/venue' },
           ]
         },
       ],
