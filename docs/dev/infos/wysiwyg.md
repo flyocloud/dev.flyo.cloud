@@ -2,6 +2,23 @@
 
 Flyo integriert einen fortschrittlichen WYSIWYG-Editor, der es Benutzern ermöglicht, Texte zu formatieren und benutzerdefinierte Elemente zu erstellen. Dieser Editor basiert auf der Technologie von [ProseMirror](https://prosemirror.net/). Ein Hauptvorteil des Flyo WYSIWYG-Editors ist seine flexible Integration, sowohl in einfacher als auch in komplexer Form. Nutzer können entweder den direkt nutzbaren HTML-Code-Output verwenden oder für eine tiefere Integration in Projekte die [JSON-Ausgabe](https://prosemirror.net/docs/ref/#model.Node) heranziehen. Dadurch lässt sich der Inhalt präzise an die spezifischen Anforderungen eines Projekts anpassen.
 
+## Headless mit WYSIWYG
+
+Der Flyo Headless Content Hub verfolgt das Ziel, dass alle Inhalte aus Entitäten unabhängig vom Ausgabekanal sind. Das bedeutet, dass keine Informationen gespeichert werden, die spezifisch für das Styling eines Kanals (z.B. Webseite oder Newsletter) sind. Eine Webseite stellt beispielsweise ein Bild anders dar als ein Newsletter. Deshalb sollten Styling-Informationen nicht Teil des Inhalts sein. Mit Flyo kannst du ein `Benutzerdefiniertes Element` erstellen, das die relevanten Informationen für ein Bild enthält, während der jeweilige Ausgabekanal (z.B. Webseite) entscheidet, wie das Bild dargestellt wird.
+
+Inhalte können entweder im JSON-Format abgerufen werden, das nur die Informationen enthält, oder im HTML-Format, das eine Grundform des Stylings mitliefert, falls gewünscht.
+
+#### Bild Slider Beispiel:
+
+Der WYSIWYG-Editor unterstützt einen Bild-Slider. Da dieser Slider jedoch JavaScript erfordert, kann er in einem Newsletter nicht dargestellt werden. In diesem Fall bleibt die HTML-Ausgabe leer, und der Slider wird in rein HTML-basierten Ausgabekanälen nicht angezeigt. Der JSON-Output enthält die Informationen zum Slider, und der Ausgabekanal (z.B. Webseite) entscheidet über die Darstellung.
+
+#### Bild Galerie Beispiel:
+
+Der WYSIWYG-Editor unterstützt auch eine Bild-Galerie. Diese Galerie kann auf HTML-basierten Kanälen dargestellt werden, und es lässt sich eine generische HTML-Ausgabe definieren. Diese Ausgabe ist jedoch nicht spezifisch für einen bestimmten Kanal. Der JSON-Output enthält die Informationen zur Galerie, und der Ausgabekanal entscheidet, wie die Galerie dargestellt wird. Ein Beispiel für eine generische HTML-Ausgabe könnte so aussehen:  
+`{foreach $images as $image} <img src="{$image}" alt="{$image}" />{/foreach}`
+
+So behältst du die Flexibilität bei der Darstellung, unabhängig vom Ausgabekanal.
+
 ## Benutzerdefinierte Elemente
 
 Ein benutzerdefiniertes Element ist ein vom Benutzer selbst erstelltes Element. Es wird über den "Einfügen"-Knopf in der Toolbar eingefügt. Der Benutzer kann die Eigenschaften des Elements definieren und die Darstellung seines Inhalts im HTML-Code steuern.
@@ -208,3 +225,38 @@ Bei der Arbeit mit den Eigenschaftstypen `Bilder` oder `Dateien` ist die Verwend
   {/foreach}
 </div>
 ```
+
+Hier ist eine überarbeitete und klarere Version des Textes:
+
+## HTML vs JSON
+
+Entwicklerintegrationen wie [Nitro CMS](../../nitro/index.md) oder der [API SDK](../../integrations/sdk.md) liefern für ein WYSIWYG-Feld immer ein Objekt, das beide Formate enthält: HTML und JSON.
+
+Beispiel:
+
+```json
+{
+  "html": "<p>...</p>",
+  "json": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "..."
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Der JSON-Output kann mit jeder ProseMirror-kompatiblen Library verarbeitet werden. Flyo bietet bereits fertige Libraries für JavaScript und PHP an.
+
++ [PHP](https://github.com/flyocloud/nitro-php-bridge)
++ [JavaScript](https://github.com/flyocloud/nitro-js-bridge)
+
+So kannst du flexibel wählen, ob du mit HTML oder JSON arbeiten möchtest, abhängig von den Anforderungen deines Projekts.
