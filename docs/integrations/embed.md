@@ -40,19 +40,46 @@ Wenn immer möglich, sollte der Script-Teil `<script src="https://embed.flyo.clo
 
 > Werden mehrere Embed Codes auf einer Seite eingebunden, sollte das `embed.min.js`-Script nur einmal eingebunden werden.
 
-## Schriftart und Schriftgrösse
+## Schriftart und Schriftgröße
 
-Embed Codes verwenden Schriftgrössen in der Einheit `em`. Sie verhalten sich somit relativ zum übergeordneten Element: 
+Embed Codes verwenden Schriftgrößen in der Einheit `em`. Dies bedeutet, dass die Schriftgröße relativ zur Schriftgröße des übergeordneten Elements (z. B. `div`, `body`) bestimmt wird.
+
+In folgendem Beispiel wird die Basis-Schriftgröße durch das `div` auf 18px gesetzt:
 
 ```html
 <div style="font-size:18px">
-    <List id="80" token="Token" />
+    <embed-list id="80" token="Token" />
 </div>
 ```
 
-Die Angabe `18px` setzt nun die basis Schrift (100%) auf 18px innerhalb des Embed Codes um 20%. 
+Die Angabe `18px` setzt die Basis-Schriftgröße (100%) innerhalb des Embed Codes auf 18px fest. Jede Angabe in `em` innerhalb dieses Containers verhält sich relativ zu diesen 18px. Das bedeutet, dass der Embed Code dynamisch mit unterschiedlichen Schriftgrößen arbeitet, je nachdem, wie `em` im Code verwendet wird. Beispiel:
 
-Die Schriftart wird anhand der im `<body>` oder `<html>` definierten `font-family` angewendet.
+```html
+<div style="font-size:18px">
+    <embed-list>
+        <p style="font-size:1em">Dieser Text hat eine Schriftgröße von 18px.</p>
+        <p style="font-size:1.5em">Dieser Text hat eine Schriftgröße von 27px (1.5 × 18px).</p>
+    </embed-list>
+</div>
+```
+
+Der Embed Code arbeitet also mit relativen Werten, sodass die Schriftgröße proportional zur festgelegten Basis-Schriftgröße (`18px`) angepasst wird. Wenn du die Basisgröße im übergeordneten Element änderst, passen sich auch alle `em`-basierten Schriftgrößen entsprechend an. 
+
+### Schriftart
+
+Die Schriftart wird von den allgemeinen CSS-Regeln im `<body>` oder `<html>`-Tag übernommen, Beispiel:
+
+```html
+<html style="font-family: Arial, sans-serif;">
+    <body>
+        <div style="font-size:18px">
+            <embed-list id="80" token="Token" />
+        </div>
+    </body>
+</html>
+```
+
+In diesem Fall wird die Schriftart `Arial` für alle untergeordneten Elemente, einschließlich des `List`-Embed Code, verwendet.
 
 ## Legacy
 
