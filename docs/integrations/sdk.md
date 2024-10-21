@@ -176,6 +176,32 @@ Ein Beispiel mit UND und ODER Verbindungen als SQL `WHERE (content LIKE `%Foobar
 
 In einem JavaScript SDK Kontext könnte der Filter-Paramter wie folgt verwendet werden `sdk.getXYZPool({filter: [{'tags.alias':'essen'}]})` oder in PHP SDKs `$apiInstance->getPointsOfInterestPool(1, 100, '-id',  ['tags.alias' => 'essen'])`. In einer PHP Umgebung können die Filter wie folgt als query param übergeben werden `urldecode(http_build_query(['filter' => [/*...*/]))`.
 
+::: warning OpenAPI Generator Serializer Problem mit JavaScript/TypeScript
+Der [OpenAPI Generator](https://openapi-generator.tech/) hat Probleme mit der Serialisierung verschachtelter Objekte. Um einen Filter in JavaScript oder TypeScript korrekt zu implementieren, muss die `queryParamsStringify`-Funktion angepasst werden:
+
+1. Installiere [qs](https://www.npmjs.com/package/qs) mit `npm install qs`.
+2. Importiere die `stringify`-Funktion: `import { stringify } from 'qs'`.
+3. Überschreibe die `queryParamsStringify`-Funktion in der SDK-Konfiguration:
+```js
+const config = new Configuration({
+  queryParamsStringify: (queryParams) => stringify(queryParams)
+});
+```
+
+Beispiel (mit verwendung der neuen `config`-Variable):
+
+```js
+const api = new BlogsApi(config);
+api.getBlogsPool({
+  filter: {
+    'tags.unique_id': {
+      'in': ['12345', '67890']
+    }
+  }
+});
+```
+:::
+
 ## Felder Limitieren
 
 Standardmässig werden alle Felder zurückgegeben, die in Flyo für den Content Pool ausgewählt wurden. Um nur bestimmte Felder aus dieser Auswahl zurückzugeben und damit den Datentransfer schlank zu halten, kann mit dem Abfrageparameter `fields` eine komma-separierte Liste von Feldern angegeben werden, die zurückgegeben werden sollen, z.B. `fields=id,firstname,lastname`.
