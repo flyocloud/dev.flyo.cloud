@@ -109,7 +109,7 @@ export default {
           text: "Konzepte",
           items: [
             {text: 'Config', link: '/nitro/config'},
-            {text: 'Environments', link: '/nitro/env'},
+            {text: 'Tokens/Environments', link: '/nitro/env'},
             {text: 'Seiten', link: '/nitro/pages'},
             {text: 'Blocks / Komponenten', link: '/nitro/block'},
             {text: 'Entitäten', link: '/nitro/entities'},
