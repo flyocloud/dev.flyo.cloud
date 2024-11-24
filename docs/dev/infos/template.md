@@ -2,10 +2,10 @@
 
 Flyo verwendet die Template Engine an verschiedenen Stellen, wie z.B. für die Erstellung von E-Mails, der Generierung von HTML-Code und der Erstellung von benutzerdefinierten Elementen im WYSIWYG-Editor. Flyo nutzt das Template-System [Latte](https://latte.nette.org/) im Strict-Modus, was bedeutet, dass du dich auf die grundlegenden Funktionen von Latte beschränken musst. Latte ist bekannt für seine Einfachheit und Leistungsfähigkeit, wodurch es besonders leicht zu erlernen und benutzerfreundlich ist.
 
-Um Variablen anzusprechen, verwende die Syntax `${name}`. Die Existenz von Variablen kannst du mit den Konstrukten `{if $name}`, `{else}` und `{/if}` überprüfen. Für die Integration von Einträgen in deine Templates nutze `{foreach $items as $item}` und `{/foreach}`.
+Um Variablen anzusprechen, verwende die Syntax `{$name}`. Die Existenz von Variablen kannst du mit den Konstrukten `{if $name}`, `{else}` und `{/if}` überprüfen. Für die Integration von Einträgen in deine Templates nutze `{foreach $items as $item}` und `{/foreach}`.
 
 ::: warning Abstand in Variable Name
-Achtung, der Syntax `${ name }` ist nicht valid, es dürfen keine Leerzeichen verwendet werden, um auf eine Variable zuzugreifen. ~~`${ name }`~~ ➔ `${name}`
+Achtung, der Syntax `{ $name }` ist nicht valid, es dürfen keine Leerzeichen verwendet werden, um auf eine Variable zuzugreifen. ~~`{ $name }`~~ ➔ `{$name}`
 :::
 
 Schauen wir uns ein Beispiel an, wie du prüfen kannst, ob die Variable `$image` vorhanden ist. Wenn ja, wird das Bild angezeigt; andernfalls erscheint eine Meldung, dass das Bild nicht existiert:
