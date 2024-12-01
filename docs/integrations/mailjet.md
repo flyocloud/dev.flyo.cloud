@@ -13,6 +13,169 @@ Seitens Mailjet kann pro Konto resp. Unterkonto nur 1 API-Key gelöst werden. Da
 https://www.flyo.ch/story/mailjet-flyo-integration
 :::
 
+## Beispielcode
+
+Einfacher Newsletterabschnitt mit fünf Variablen für z.B. Blogartikel
+
+```html
+<mj-section background-color="#FFFFFF" padding="20px">
+      <mj-column>
+        <mj-image src="{$bild}" alt="Blog Image" border-radius="30px"/>
+         <mj-text font-size="35px" line-height="42px" font-weight="700" color="#002D4F">{$titel}</mj-text>
+        <mj-text font-size="16px" font-weight="400" line-height="19px" color="#002D4F">{$text}</mj-text>
+        <mj-button align="left" background-color="#003246" color="white" border-radius="30px" href={$link}>Mehr</mj-button>
+      </mj-column>
+    </mj-section>
+<mj-raw>{$metric}</mj-raw>
+```
+
+Einfaches Newsletterlayout mit einem Header und Footer sowie einem Editoral-Teil zur manuellen Befüllung.
+
+```html
+<mjml>
+
+  <mj-head>
+
+    <mj-attributes>
+
+      <mj-all font-family="Verdana" />
+
+    </mj-attributes>
+
+    <mj-title>Newsletter</mj-title>
+
+    <mj-style inline="inline">
+
+      .content {
+
+      padding: 20x;
+
+      }
+
+      .btn {
+
+      background-color: #003246;
+
+      color: white;
+
+      border-radius: 30px;
+
+      padding: 10px 20px;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+      font-size: 14px;
+
+      display: inline-block;
+
+      }
+
+      .highlight {
+
+      color: #003246;
+
+      font-weight: 700;
+
+      }
+
+      .footer-text {
+
+      font-size: 14px;
+
+      color: #FFFFFF;
+
+      }
+
+      .footer-link {
+
+      text-decoration: none;
+
+      color: #FFFFFF;
+
+      font-weight: 600;
+
+      }
+
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body background-color="#FFFFFF">
+
+    <mj-section background-color="#FFFFFF">
+
+      <!-- Logo -->
+
+      <mj-column width="100%">
+
+        <mj-image align="center" src="https://storage.flyo.cloud/14_097e4e57_logoflyofarbig.png" alt="Flyo-Logo" width="100px" />
+
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Title Section -->
+
+    <mj-section background-color="#003246" padding="30px" padding-top="40px" border-radius="30px">
+
+      <mj-column>
+
+        <mj-image src="titelbild" alt="Hero Image" border-radius="30px" />
+
+        <mj-text font-size="35px" line-height="42px" font-weight="700" color="#FFFFFF">titel</mj-text>
+
+        <mj-text font-size="18px" color="#FFFFFF" line-height="22px" font-weight="700">leadtext</mj-text>
+
+        <mj-text font-size="16px" color="#FFFFFF" line-height="20px" font-weight="400">Text Editorial</mj-text>
+
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Blogs Section -->
+
+    Blogs
+
+    <!-- Footer -->
+
+    <mj-section background-color="#003246" padding="20px" border-radius="30px">
+
+      <mj-column width="100%">
+
+        <mj-text font-size="14px" font-weight="400" color="#FFFFFF" align="center">
+
+          Dieser Newsletter wurde versandt von:
+
+          <br></br>
+
+          Flyo Zoo, Internetstrasse 77, 5000 Aarau
+
+        </mj-text>
+
+      </mj-column>
+
+      <mj-column>
+
+        <mj-text align="center" font-size="12px" color="#FFFFFF">
+
+          <a href="[[UNSUB_LINK_DE]]" class="footer-link">Newsletter abbestellen</a>
+
+            <br></br>
+
+          <a href="[[PERMALINK]]" class="footer-link">Im Browser anschauen</a>
+
+        </mj-text>
+
+      </mj-column>
+
+    </mj-section>
+
+  </mj-body>
+
+</mjml>
+```
 
 
 ### Iteration von Inhalten
@@ -37,7 +200,7 @@ Um [Metriken](../dev/infos/metrics.md) für einen Newsletter einzurichten, müss
 
 ![Alle benötigten Bedienflächen](assets/mailjet/mjml-metric.png)
 
-Beispiel Code:
+Beispielcode:
 
 ```html
 <mj-section full-width="full-width">
