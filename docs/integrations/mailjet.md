@@ -33,147 +33,133 @@ Einfaches Newsletterlayout mit einem Header und Footer sowie einem Editoral-Teil
 
 ```html
 <mjml>
-
   <mj-head>
-
     <mj-attributes>
-
       <mj-all font-family="Verdana" />
-
     </mj-attributes>
-
     <mj-title>Newsletter</mj-title>
-
     <mj-style inline="inline">
-
       .content {
-
-      padding: 20x;
-
+        padding: 20px;
       }
-
       .btn {
-
-      background-color: #003246;
-
-      color: white;
-
-      border-radius: 30px;
-
-      padding: 10px 20px;
-
-      text-decoration: none;
-
-      font-weight: 700;
-
-      font-size: 14px;
-
-      display: inline-block;
-
+        background-color: #003246;
+        color: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        display: inline-block;
       }
-
       .highlight {
-
-      color: #003246;
-
-      font-weight: 700;
-
+        color: #003246;
+        font-weight: 700;
       }
-
       .footer-text {
-
-      font-size: 14px;
-
-      color: #FFFFFF;
-
+        font-size: 14px;
+        color: #FFFFFF;
       }
-
       .footer-link {
-
-      text-decoration: none;
-
-      color: #FFFFFF;
-
-      font-weight: 600;
-
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 600;
       }
-
     </mj-style>
-
   </mj-head>
-
+  
   <mj-body background-color="#FFFFFF">
-
+    <!-- Logo Section -->
     <mj-section background-color="#FFFFFF">
-
-      <!-- Logo -->
-
       <mj-column width="100%">
-
-        <mj-image align="center" src="https://storage.flyo.cloud/14_097e4e57_logoflyofarbig.png" alt="Flyo-Logo" width="100px" />
-
+        <mj-image
+          align="center"
+          src="https://storage.flyo.cloud/14_097e4e57_logoflyofarbig.png"
+          alt="Flyo-Logo"
+          width="100px"
+        />
       </mj-column>
-
     </mj-section>
 
     <!-- Title Section -->
-
-    <mj-section background-color="#003246" padding="30px" padding-top="40px" border-radius="30px">
-
+    <mj-section
+      background-color="#003246"
+      padding="30px"
+      padding-top="40px"
+      border-radius="30px"
+    >
       <mj-column>
-
-        <mj-image src="titelbild" alt="Hero Image" border-radius="30px" />
-
-        <mj-text font-size="35px" line-height="42px" font-weight="700" color="#FFFFFF">titel</mj-text>
-
-        <mj-text font-size="18px" color="#FFFFFF" line-height="22px" font-weight="700">leadtext</mj-text>
-
-        <mj-text font-size="16px" color="#FFFFFF" line-height="20px" font-weight="400">Text Editorial</mj-text>
-
+        <mj-image
+          src="titelbild"
+          alt="Hero Image"
+          border-radius="30px"
+        />
+        <mj-text
+          font-size="35px"
+          line-height="42px"
+          font-weight="700"
+          color="#FFFFFF"
+        >
+          titel
+        </mj-text>
+        <mj-text
+          font-size="18px"
+          color="#FFFFFF"
+          line-height="22px"
+          font-weight="700"
+        >
+          leadtext
+        </mj-text>
+        <mj-text
+          font-size="16px"
+          color="#FFFFFF"
+          line-height="20px"
+          font-weight="400"
+        >
+          Text Editorial
+        </mj-text>
       </mj-column>
-
     </mj-section>
 
     <!-- Blogs Section -->
-
-    Blogs
-
-    <!-- Footer -->
-
-    <mj-section background-color="#003246" padding="20px" border-radius="30px">
-
-      <mj-column width="100%">
-
-        <mj-text font-size="14px" font-weight="400" color="#FFFFFF" align="center">
-
-          Dieser Newsletter wurde versandt von:
-
-          <br></br>
-
-          Flyo Zoo, Internetstrasse 77, 5000 Aarau
-
-        </mj-text>
-
-      </mj-column>
-
+    <mj-section>
       <mj-column>
-
-        <mj-text align="center" font-size="12px" color="#FFFFFF">
-
-          <a href="[[UNSUB_LINK_DE]]" class="footer-link">Newsletter abbestellen</a>
-
-            <br></br>
-
-          <a href="[[PERMALINK]]" class="footer-link">Im Browser anschauen</a>
-
-        </mj-text>
-
+        <!-- Add your blogs content here -->
+        Blogs
       </mj-column>
-
     </mj-section>
 
+    <!-- Footer Section -->
+    <mj-section
+      background-color="#003246"
+      padding="20px"
+      border-radius="30px"
+    >
+      <mj-column width="100%">
+        <mj-text
+          font-size="14px"
+          font-weight="400"
+          color="#FFFFFF"
+          align="center"
+        >
+          Dieser Newsletter wurde versandt von:
+          <br />
+          Flyo Zoo, Internetstrasse 77, 5000 Aarau
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="12px"
+          color="#FFFFFF"
+        >
+          <a href="[[UNSUB_LINK_DE]]" class="footer-link">Newsletter abbestellen</a>
+          <br />
+          <a href="[[PERMALINK]]" class="footer-link">Im Browser anschauen</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
   </mj-body>
-
 </mjml>
 ```
 
