@@ -18,19 +18,21 @@ https://www.flyo.ch/story/mailjet-flyo-integration
 
 ## Beispielcode
 
-Einfacher Newsletterabschnitt mit fünf Variablen für z.B. Blogartikel
+Einfacher Newsletterabschnitt mit vier Variablen für z.B. Blogartikel
 
 ```html
-<mj-section background-color="#FFFFFF" padding="20px">
-      <mj-column>
-        <mj-image src="{$bild}" alt="Blog Image" border-radius="30px"/>
-         <mj-text font-size="35px" line-height="42px" font-weight="700" color="#002D4F">{$titel}</mj-text>
-        <mj-text font-size="16px" font-weight="400" line-height="19px" color="#002D4F">{$text}</mj-text>
-        <mj-button align="left" background-color="#003246" color="white" border-radius="30px" href={$link}>Mehr</mj-button>
-      </mj-column>
-    </mj-section>
+<mj-section>
+  <mj-column>
+    <mj-image src="{$bild}" alt="{$titel}" border-radius="30px" />
+    <mj-text>{$titel}</mj-text>
+    <mj-text>{$text}</mj-text>
+    <mj-button href="{$link}">Mehr</mj-button>
+  </mj-column>
+</mj-section>
 <mj-raw>{$metric}</mj-raw>
 ```
+
+> Das Metric-Pixel mithilfe von `$metric` kann bei umfangreichen Newsletterauflagen eine sehr hohe Anzahl an Impressionen generieren.
 
 Einfaches Newsletterlayout mit einem Header und Footer sowie einem Editoral-Teil zur manuellen Befüllung.
 
