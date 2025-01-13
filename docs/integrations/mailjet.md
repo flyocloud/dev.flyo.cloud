@@ -16,7 +16,7 @@ Seitens Mailjet kann pro Konto resp. Unterkonto nur 1 API-Key gelöst werden. Da
 https://www.flyo.ch/story/mailjet-flyo-integration
 :::
 
-## Beispielcode
+### Beispielcode
 
 Einfacher Newsletterabschnitt mit Variablen für z.B. Blogartikel
 
@@ -29,6 +29,7 @@ Einfacher Newsletterabschnitt mit Variablen für z.B. Blogartikel
     <mj-button href="{$link}">Mehr</mj-button>
   </mj-column>
 </mj-section>
+<mj-raw>{$metric}</mj-raw>
 ```
 
 > Das Metric-Pixel mithilfe von `$metric` kann bei umfangreichen Newsletterauflagen eine sehr hohe Anzahl an Impressionen generieren.
@@ -166,7 +167,6 @@ Einfaches Newsletterlayout mit einem Header und Footer sowie einem Editoral-Teil
   </mj-body>
 </mjml>
 ```
-
 
 ### Iteration von Inhalten
 
