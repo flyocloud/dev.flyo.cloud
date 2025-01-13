@@ -18,7 +18,7 @@ https://www.flyo.ch/story/mailjet-flyo-integration
 
 ## Beispielcode
 
-Einfacher Newsletterabschnitt mit vier Variablen für z.B. Blogartikel
+Einfacher Newsletterabschnitt mit Variablen für z.B. Blogartikel
 
 ```html
 <mj-section>
@@ -29,7 +29,6 @@ Einfacher Newsletterabschnitt mit vier Variablen für z.B. Blogartikel
     <mj-button href="{$link}">Mehr</mj-button>
   </mj-column>
 </mj-section>
-<mj-raw>{$metric}</mj-raw>
 ```
 
 > Das Metric-Pixel mithilfe von `$metric` kann bei umfangreichen Newsletterauflagen eine sehr hohe Anzahl an Impressionen generieren.
