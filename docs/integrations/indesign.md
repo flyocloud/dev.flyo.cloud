@@ -17,6 +17,18 @@ Damit das JSX-Skript die Inhalte aus Flyo laden kann, muss OSX über die Anwendu
 6) Warte, bis der Prozess abgeschlossen ist. Nun ist Curl installiert und du kannst die Indesign-Integration nutzen.
 :::
 
+## Flyo vorbereiten: Content Pool erstellen
+
+Damit Inhalte nach Indesign synchronisiert werden können, müssen sich diese Inhalte in einem Content Pool befinden. Nutze einen bestehenden Content Pool oder erstelle einen neuen.
+
+## Datenmapping und Formatierung in Flyo
+
+Durch entsprechende Eingaben beim Datenmapping während der Konfiguration der Indesign-Integration kann die spätere Formatierung in Indesign bereits entscheidend beeinflusst werden.
+- nutze das kleine Filtersymbol, um z.B. zu beeinflussen, wie ein Datum oder Zeitstempel formatiert wird
+- nutze im Datenmapping diverse typografische Befehle, um Umbrüche oder Abstände einzufügen, ansonsten werden alle Felder als Fliesstext aneinandergehängt (z.B. \r für einen Absatzumbruch, \n für einen Zeilenumbruch oder \t für einen Tabulator)
+  
+![Beispiel für ein Mapping mit Absatzumbrüchen](assets/indesign/mapping.png)
+
 ## Indesign vorbereiten: benötigte Fenster einblenden
 
 Blende die später benötigten Fenster ein. Klicke dazu im Menü am oberen Bildschirmrand auf "Fenster" und wähle je einmal
@@ -51,7 +63,7 @@ Wechsle ins Absatzformate-Bedienfeld und klicke unten rechts auf das kleine Plus
 
 Indesign erstellt dadurch nummerierte Absatzformate "Absatzformat 1, 2, ..." und zeigt diese im Absatzformat-Bedienfeld an.
 
-Doppelklicke auf ein Absatzformat, um es zu bearbeiten. Gib dem Format einen eindeutigen Namen und stelle Schriftart, Zeilenabstände, Einzüge etc. wie gewünscht ein.
+Doppelklicke auf ein Absatzformat, um es zu bearbeiten. Gib dem Format einen eindeutigen Namen und stelle Schriftart, Zeilenabstände, Einzüge etc. wie gewünscht ein. Achtung: die Absatzformate müssen exakt der Bezeichnung in Flyo entsprechend (z.B. Gross-/Kleinschreibung).
 
 ![Absatzformat erstellen](assets/indesign/erstelle_absatzformat.png)
 
